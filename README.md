@@ -51,16 +51,3 @@ Penser à utiliser ...
 ##### Définition des lots fonctionnels & rédaction des user stories
 
 ---
-
-## <a name="infos"></a> Infos utiles à conserver
-
-#### Contacts
-
-Sébastien Lequeux - sebastien.lequeux@orange.fr - 06 17 13 73 75
-
-Thierry Aubié -  genealogie.aubie@gmail.com
-
-
-#### Comptes créés
-
-cgep93web@gmail.com ( mdp: simplon2018 )
