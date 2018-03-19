@@ -4,8 +4,8 @@
 
 + [Historique](#historique)
 + [Infos utiles](#infos)
-+ [Trello](https://trello.com/){:target="_blank"}
-+ [Slide](http://slides.com/thomasfroger/projet-client#/){:target="_blank"}
++ [Trello](https://trello.com/)
++ [Slide](http://slides.com/thomasfroger/projet-client#/)
 
 
 ## <a name="historique"></a> Historique (à mettre à jour régulièrement)
@@ -26,9 +26,6 @@ Visibles dans le trello ...
 ##### Validation d'un premier Use Case Diagram
 *penser à pusher les docs sur gitlab dans un dossier "documentation"*
 
-##### Création d'une adresse mail pour le client :
-+ cgep93web@gmail.com
-+ mdp: simplon2018
 
 ##### Gitlab
 + Création d'un compte pour le client (avec cgep93web@gmail.com)
