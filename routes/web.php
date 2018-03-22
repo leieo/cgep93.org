@@ -13,6 +13,9 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/contact', 'ContactController@contact')->name('contact');
+Route::get('/recherche', 'RechercheController@recherche')->name('recherche');
+
 
  // Authentication Routes...
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
