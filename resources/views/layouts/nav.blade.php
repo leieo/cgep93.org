@@ -1,5 +1,13 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">CGEP 93</a>
+      <a class="navbar-brand" href="#">
+          <img src="../assets/img/logo.gif" width="30" height="30" alt="">
+      </a>
+      <p>
+        <a class="navbar-brand navbar-brand-laptop" href="#">Cercle Généalogique de l'Est Parisien</a>
+        <br class="navbar-brand navbar-brand-laptop">
+        <a class="navbar-brand navbar-brand-mobile" href="#">CGEP 93</a>
+        <a class="navbar-brand navbar-brand-laptop navbar-brand-laptop-subtitle" href="#">Généalogie et Histoire de Seine-Saint-Denis</a>
+      </p>
       <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,7 +49,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Connection</a>
+            <a class="nav-link" href="login">Espace membre</a>
           </li>
         </ul>
       </div>
