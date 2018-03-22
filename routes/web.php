@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@home');
+Route::get('/contact', 'ContactController@contact')->name('contact');
+Route::get('/recherche', 'RechercheController@recherche')->name('recherche');
