@@ -13,8 +13,9 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/contact', 'ContactController@contact')->name('contact');
-Route::get('/recherche', 'RechercheController@recherche')->name('recherche');
+// Footer Routes 
+    Route::get('/contact', 'ContactController@contact')->name('contact');
+    Route::get('/recherche', 'RechercheController@recherche')->name('recherche');
 
 
  // Authentication Routes...
