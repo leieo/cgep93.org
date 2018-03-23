@@ -15,9 +15,9 @@
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'association</a>
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'Association</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Statuts</a>
+              <a class="dropdown-item" href="{{route('association')}}">Statuts</a>
               <a class="dropdown-item" href="#">Membres du CA</a>
               <a class="dropdown-item" href="#">Règlement intérieur</a>
               <a class="dropdown-item" href="#">Adhésions</a>
@@ -27,9 +27,21 @@
           </li>
 
           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie Associative</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="{{route('communitylife')}}">Bulletins</a>
+              <a class="dropdown-item" href="#">Liste sommaire</a>
+              <a class="dropdown-item" href="#">Relevés papiers</a>
+              <a class="dropdown-item" href="#">Génécole</a>
+              <a class="dropdown-item" href="#">Événements</a>
+
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recherches</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Généabank</a>
+              <a class="dropdown-item" href="{{route('search')}}">Généabank</a>
               <a class="dropdown-item" href="#">Bigenet</a>
               <a class="dropdown-item" href="#">Trucs et astuces</a>
               <a class="dropdown-item" href="#">Département</a>
@@ -39,17 +51,7 @@
             </div>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie associative</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Bulletins</a>
-              <a class="dropdown-item" href="#">Liste sommaire</a>
-              <a class="dropdown-item" href="#">Relevés papiers</a>
-              <a class="dropdown-item" href="#">Génécole</a>
-              <a class="dropdown-item" href="#">Événements</a>
 
-            </div>
-          </li>
 
           <li class="nav-item">
             @guest
