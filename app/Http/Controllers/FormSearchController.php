@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FromSearchController extends Controller
+class FormSearchController extends Controller
 
 {
     public function search() {

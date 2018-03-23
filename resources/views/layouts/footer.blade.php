@@ -18,20 +18,18 @@
           75012 Paris<br>
           France
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Nous contacter
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nous contacter:
+            <a class="dropdown-item fas fa-at navbar-dark bg-dark" href="{{ Route('contact') }}">Envoyez nous un mail</a>
+            <a class="dropdown-item fas fa-phone navbar-dark bg-dark">Appellez-nous au 00.00.00.00.00</a>
+            <a class="dropdown-item fas fa-search-plus navbar-dark bg-dark" href="{{ Route('formsearch') }}">Vos demandes de recherches</a>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item fas fa-at" href="{{ Route('contact') }}">Envoyez nous un mail</a>
-            <a class="dropdown-item fas fa-phone">Appellez-nous au 00.00.00.00.00</a>
-            <a class="dropdown-item fas fa-search-plus" href="{{route('formsearch')}}">Vos demandes de recherches</a>
-          </div>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Facebook</a>
+        <a class="nav-link fab fa-facebook-f" href="https://www.facebook.com" target="_blank">Facebook</a>
         </li>
       </ul>
     </div>
   </nav>
 </address>
+&copy; Le Cercle Généalogique de l'Est Parisien - <?php echo date("Y");?>, tous droits réservés
