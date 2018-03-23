@@ -17,10 +17,6 @@
         <style>
 
           footer {
-            padding: 20px;
-            color: grey;
-            background-color: black;
-            font-size: 12px;
           }
 
           footer h6 {
@@ -34,8 +30,16 @@
           }
 
           .sitemap {
+            padding: 30px;
+            color: grey;
+            background-color: black;
+            font-size: 12px;
             display: grid;
             grid-template-columns: 200px 200px 200px;
+          }
+
+          .sitemap a {
+            color: grey;
           }
 
           .sitemap-part1 {
