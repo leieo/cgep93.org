@@ -11,4 +11,8 @@
 </div>
 @endsection
 
+@section('map')
+ <div id="map"><div>
+@endsection
+
 <div></div>
