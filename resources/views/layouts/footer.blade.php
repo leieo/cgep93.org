@@ -10,7 +10,14 @@ https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
           Cercle Généalogie de l'Est Parisien<br>
           115 route de soie<br>
           Bâtiment du savoir<br>
-          Paris<br>
+          75008 Paris<br>
+          France
+        </li>
+        <li class="nav-link fas fa-home">
+          Le siège du Cercle Généalogie de l'Est Parisien<br>
+          1000 route du Président Roosvelt<br>
+          Bâtiment du Ministre de la Culture<br>
+          75012 Paris<br>
           France
         </li>
         <li class="nav-item dropdown">

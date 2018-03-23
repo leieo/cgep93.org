@@ -13,10 +13,31 @@
 
 Route::get('/', 'HomeController@index');
 
-// Footer Routes 
-    Route::get('/contact', 'ContactController@contact')->name('contact');
-    Route::get('/formsearch', 'FormSearchController@search')->name('formsearch');
+// Footer Routes
+    Route::get('/contact', 'ContactController@contact')->name('contact'); //formulaire de contact
+    Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //formulaire de recherche
 
+// Association Route Longue page avec ancres - renvoi sur le footer pour Nous Contacter
+    Route::get('/association');
+
+// Vie Associative Route - Longue page avec ancres et renvoi pour chaque section
+    Route::get('/communitylife'); //Vie associative
+    Route::get('/bulletins'); //Bulletins
+    Route::get('/summary');//Listes sommaires
+    Route::get('/paperstatements');//Relevés papiers
+    Route::get('/genecole');//Génécole
+    Route::get('/events');//Evènements
+
+// Recherches
+    Route::get('/search');//Recherche
+    Route::get('/geneabank');//Généabank
+    Route::get('/bigenet');//Bigenet
+    Route::get('/tips');//Trucs et astuces
+    Route::get('/department');//Département
+    Route::get('/archives');//Archives
+    Route::get('/links');//Liens
+    Route::get('/worldresearch');//Recherches dans le monde
+    Route::get('/library');//Photothèque
 
  // Authentication Routes...
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
