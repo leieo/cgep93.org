@@ -13,7 +13,7 @@
       </button>
       <div class="navbar-collapse collapse" id="navbar" style="max-height: 36%">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'association</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="#">Statuts</a>
@@ -25,7 +25,7 @@
             </div>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recherches</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="#">Généabank</a>
@@ -38,7 +38,7 @@
             </div>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie associative</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="#">Bulletins</a>
