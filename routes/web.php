@@ -15,7 +15,7 @@ Route::get('/', 'HomeController@index');
 
 // Footer Routes 
     Route::get('/contact', 'ContactController@contact')->name('contact');
-    Route::get('/recherche', 'RechercheController@recherche')->name('recherche');
+    Route::get('/formsearch', 'FormSearchController@search')->name('formsearch');
 
 
  // Authentication Routes...
