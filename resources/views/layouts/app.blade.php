@@ -14,6 +14,43 @@
         <!-- Styles -->
         <link href="{{asset('css/main.css')}}" rel="stylesheet" type="text/css">
 
+        <style>
+
+          footer {
+            padding: 20px;
+            color: grey;
+            background-color: black;
+            font-size: 12px;
+          }
+
+          footer h6 {
+            font-weight: 600;
+            font-size: 14px;
+          }
+
+          footer ul {
+            padding-left: 5px;
+            list-style: none;
+          }
+
+          .sitemap {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+          }
+
+          .sitemap-part1 {
+            grid-column: 1 / 2;
+          }
+
+          .sitemap-part2 {
+            grid-column: 2 / 3 ;
+          }
+          .sitemap-part3 {
+            grid-column: 3 / 4 ;
+          }
+
+        </style>
+
     </head>
 
     <body class="bg-light">
