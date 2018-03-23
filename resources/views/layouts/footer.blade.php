@@ -1,10 +1,12 @@
+https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
 <br>
 <br>
 <address class="navbar navbar-expand-lg navbar-dark bg-dark">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-link">
+        <li class="nav-link fas fa-home">
           Cercle Généalogie de l'Est Parisien<br>
           115 route de soie<br>
           Bâtiment du savoir<br>
@@ -16,9 +18,9 @@
             Nous contacter
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{{ Route('contact') }}">Envoyez nous un mail</a>
-            <a class="dropdown-item" href="/">Appellez-nous au 00.00.00.00.00</a>
-            <a class="dropdown-item" href="{{route('formsearch')}}">Vos demandes de recherches</a>
+            <a class="dropdown-item fas fa-at" href="{{ Route('contact') }}">Envoyez nous un mail</a>
+            <a class="dropdown-item fas fa-phone">Appellez-nous au 00.00.00.00.00</a>
+            <a class="dropdown-item fas fa-search-plus" href="{{route('formsearch')}}">Vos demandes de recherches</a>
           </div>
         </li>
         <li class="nav-item">
