@@ -1,5 +1,3 @@
-https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-
 <br>
 <br>
 <address class="navbar navbar-expand-lg navbar-dark bg-dark">
