@@ -25,7 +25,7 @@
               <a class="dropdown-item" href="#">Nous contacter</a>
             </div>
           </li>
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recherches</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -50,7 +50,7 @@
 
             </div>
           </li>
-          
+
           <li class="nav-item">
             @guest
               <a class="nav-link" href="login">Espace membre</a>
