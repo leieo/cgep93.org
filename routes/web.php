@@ -18,10 +18,10 @@ Route::get('/', 'HomeController@index');
     Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //formulaire de recherche
 
 // Association Route Longue page avec ancres - renvoi sur le footer pour Nous Contacter
-    Route::get('/association');
+    Route::get('/association', 'AssociationController@association')->name('association');
 
 // Vie Associative Route - Longue page avec ancres et renvoi pour chaque section
-    Route::get('/communitylife'); //Vie associative
+    Route::get('/communitylife', 'CommunitylifeController@communitylife')->name('communitylife'); //Vie associative
     Route::get('/bulletins'); //Bulletins
     Route::get('/summary');//Listes sommaires
     Route::get('/paperstatements');//Relevés papiers
@@ -29,7 +29,7 @@ Route::get('/', 'HomeController@index');
     Route::get('/events');//Evènements
 
 // Recherches
-    Route::get('/search');//Recherche
+    Route::get('/search', 'SearchController@search')->name('search');//Recherche
     Route::get('/geneabank');//Généabank
     Route::get('/bigenet');//Bigenet
     Route::get('/tips');//Trucs et astuces
