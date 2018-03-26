@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-          <img src="../assets/img/logo.gif" width="30" height="30" alt="">
+          <!--img src="{{asset('assets/pictures/Logo.gif')}}" width="30" height="30" alt="logo"-->
       </a>
       <p>
-        <a class="navbar-brand navbar-brand-laptop" href="/public">Cercle Généalogique de l'Est Parisien</a>
+        <a class="navbar-brand navbar-brand-laptop" href="/">Cercle Généalogique de l'Est Parisien</a>
         <br class="navbar-brand navbar-brand-laptop">
         <a class="navbar-brand navbar-brand-mobile" href="#">CGEP 93</a>
         <a class="navbar-brand navbar-brand-laptop navbar-brand-laptop-subtitle" href="#">Généalogie et Histoire de Seine-Saint-Denis</a>
@@ -21,7 +21,7 @@
               <a class="dropdown-item" href="#">Règlement intérieur</a>
               <a class="dropdown-item" href="#">Adhésions</a>
               <a class="dropdown-item" href="#">Infos pratiques</a>
-              <a class="dropdown-item" href="#">Nous contacter</a>
+              <a class="dropdown-item" href="mailto:contact@cgep93.org">Nous contacter</a>
             </div>
           </li>
 
