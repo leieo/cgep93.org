@@ -10,88 +10,51 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="">
+        <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
 
         <style>
-            html, body {
-                overflow-x: hidden; /* Prevent scroll on narrow devices */
-                padding-top: 56px;
-            }
 
-            @media (max-width: 767.98px) {
-            .offcanvas-collapse {
-            position: fixed;
-            top: 56px; /* Height of navbar */
-            bottom: 0;
-            width: 100%;
-            padding-right: 1rem;
-            padding-left: 1rem;
-            overflow-y: auto;
-            background-color: var(--gray-dark);
-            transition: -webkit-transform .3s ease-in-out;
-            transition: transform .3s ease-in-out;
-            transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-            }
-            .offcanvas-collapse.open {
-            -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem); /* Account for horizontal padding on navbar */
-            }
-            }
+          footer {
+          }
 
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+          footer h6 {
+            font-weight: 600;
+            font-size: 14px;
+          }
 
-            .full-height {
-                height: 100vh;
-            }
+          footer ul {
+            padding-left: 5px;
+            list-style: none;
+          }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+          .sitemap {
+            padding: 30px;
+            color: grey;
+            background-color: black;
+            font-size: 12px;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+          }
 
-            .position-ref {
-                position: relative;
-            }
+          .sitemap a {
+            color: grey;
+          }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+          .sitemap-part1 {
+            grid-column: 1 / 2;
+          }
 
-            .content {
-                text-align: center;
-            }
+          .sitemap-part2 {
+            grid-column: 2 / 3 ;
+          }
+          .sitemap-part3 {
+            grid-column: 3 / 4 ;
+          }
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
 
     </head>
@@ -105,15 +68,8 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-      <script type="text/javascript">
-          $(function () {
-              'use strict'
-                $('[data-toggle="offcanvas"]').on('click', function () {
-                    $('.offcanvas-collapse').toggleClass('open')
-                })
-          })
-      </script>
+      <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+      <script src="{{asset('js/map.js')}}"></script>
 
     </body>
 </html>
