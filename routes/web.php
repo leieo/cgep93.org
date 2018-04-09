@@ -11,6 +11,9 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', 'HomeController@index');
 
 // Footer Routes
@@ -58,3 +61,13 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/**
+ * BACK OFFICE ROUTES
+ */
+
+Route::group(['middleware' => ['web']], function () {
+	Route::get('/admin', 'Backoffice\PagesController@home')->name('admin.home');
+
+	Route::get('/admin/members', 'Backoffice\MembersController@index')->name('admin.members.index');
+});
