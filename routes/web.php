@@ -14,7 +14,8 @@
 Route::get('/', 'HomeController@index');
 
 // Footer Routes
-Route::get('/contact', 'ContactController@contact')->name('contact'); //formulaire de contact
+Route::get('/contact', 'ContactController@viewContact')->name('contact'); //formulaire de contact
+Route::get('/mail','ContactController@sendMail')->name('mail');
 Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //formulaire de recherche
 
 // Association Route Longue page avec ancres - renvoi sur le footer pour Nous Contacter
@@ -26,7 +27,7 @@ Route::get('/bulletins'); //Bulletins
 Route::get('/summary');//Listes sommaires
 Route::get('/paperstatements');//Relevés papiers
 Route::get('/genecole');//Génécole
-Route::get('/events');//Evènements
+Route::get('/events', 'EventController@Event')->name('event');//Evènements
 
 // Recherches
 Route::get('/search', 'SearchController@search')->name('search');//Recherche
