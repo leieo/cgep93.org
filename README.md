@@ -51,3 +51,6 @@ Penser à utiliser ...
 Info utilisation GOOGLE API:
 Il faut rajouter les evenements sur le calendrier du site depuis votre compte gmail  (avec cgep93web@gmail.com)
 Pour les information sur les visiteur du site veuillez vous rendre  sur https://analytics.google.com puis sur CGEP93 pour avoir le suivis des visites
+
+
+Faut pas oublier de changer le .ENV local pour l'envois des mail !
