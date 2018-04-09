@@ -14,7 +14,7 @@ class ReportsController extends Controller
      */
     public function index()
     {
-        $reports = Report::orderby('created_at', 'desc')->paginate(10);
+        $reports = Report::orderby('created_at', 'desc')->paginate(5);
         return view('reports.index')->with('reports',$reports);
     }
 
@@ -36,15 +36,18 @@ class ReportsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,[
-            'title'=>'required',
-            'body'=>'required'
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required'
         ]);
+
         // Save datas
-        $reports = new Report;
-        $reports->title = $request->input('title');
-        $reports->body = $request->input('body');
-        $reports-save();
+        $report = new Report;
+        $report->title = $request->input('title');
+        $report->body = $request->input('body');
+        $report->save();
+
+        vardump($report);
 
         return redirect('/reports');
     }

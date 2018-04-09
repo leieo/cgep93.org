@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+    <a href="" class="btn btn-primary"> Ajouter les dernières Assemblés Générales </a>
     <h1 class="text-center">Voici les dernières Assemblés Générales:</h1>
     @if(count($reports)>0)
         @foreach($reports as $report)
-        <div class="">
+        <div class="jumbotron">
             <h3>{{$report->title}}</h3>
             <p>{{$report->body}}</p>
             <small> {{$report->created_at}} </small>
