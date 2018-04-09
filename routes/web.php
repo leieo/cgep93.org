@@ -26,7 +26,7 @@ Route::get('/bulletins'); //Bulletins
 Route::get('/summary');//Listes sommaires
 Route::get('/paperstatements');//Relevés papiers
 Route::get('/genecole');//Génécole
-Route::get('/events');//Evènements
+Route::get('/events', 'EventController@Event')->name('event');//Evènements
 
 // Recherches
 Route::get('/search', 'SearchController@search')->name('search');//Recherche

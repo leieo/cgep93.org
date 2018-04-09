@@ -32,7 +32,7 @@
                 <a class="dropdown-item" href="#">Liste sommaire</a>
                 <a class="dropdown-item" href="#">Relevés papiers</a>
                 <a class="dropdown-item" href="#">Génécole</a>
-                <a class="dropdown-item" href="#">Événements</a>
+                <a class="dropdown-item" href="{{route('event')}}">Événements</a>
 
             </div>
         </li>
