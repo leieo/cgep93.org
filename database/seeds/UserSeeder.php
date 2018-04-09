@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -16,7 +18,9 @@ class UserSeeder extends Seeder
 			DB::table('users')->insert([
 				"name" => "johndoe$i",
 				"email" => "john$i@doe.com",
-				"password" => bcrypt('0000')
+				"password" => bcrypt('0000'),
+				"role" => User::ROLE_ADMIN,
+				"activated_at" => Carbon::now()
 			]);
 		}
 	}

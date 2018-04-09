@@ -14,6 +14,8 @@
                 <th scope="col">#</th>
                 <th scope="col">Nom</th>
                 <th scope="col">Email</th>
+                <th scope="col">Role</th>
+                <th scope="col">Activé le ...</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +24,8 @@
                     <td>{{ $user->id }}</td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
+                    <td>{{ \App\User::ROLES[$user->role] }}</td>
+                    <td>{{ $user->activated_at }}</td>
                 </tr>
             @endforeach
         </tbody>
