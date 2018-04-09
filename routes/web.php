@@ -70,4 +70,5 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/admin', 'Backoffice\PagesController@home')->name('admin.home');
 
 	Route::get('/admin/members', 'Backoffice\MembersController@index')->name('admin.members.index');
+	Route::get('/admin/members/waiting', 'Backoffice\MembersController@waiting')->name('admin.members.waiting');
 });

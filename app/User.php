@@ -20,10 +20,12 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+	const ROLE_WAITING = 0;
 	const ROLE_ADMIN = 1;
 	const ROLE_MEMBER = 2;
 
 	const ROLES = [
+		self::ROLE_WAITING => 'En attente',
 		self::ROLE_ADMIN => 'Admin',
 		self::ROLE_MEMBER => 'Adhérent'
 	];

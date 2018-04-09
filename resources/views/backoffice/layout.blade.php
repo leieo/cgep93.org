@@ -17,94 +17,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav navbar-sidenav" style="overflow: overlay;" id="exampleAccordion">
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="left" title="Tableau de bord">
+                        <a class="nav-link" href="{{ route('admin.home') }}">
                             <i class="fa fa-fw fa-dashboard"></i>
-                            <span class="nav-link-text">Dashboard</span>
+                            <span class="nav-link-text">Tableau de bord</span>
                         </a>
                     </li>
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                        <a class="nav-link" href="#">
-                            <i class="fa fa-fw fa-area-chart"></i>
-                            <span class="nav-link-text">Charts</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                        <a class="nav-link" href="#">
-                            <i class="fa fa-fw fa-table"></i>
-                            <span class="nav-link-text">Tables</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="left" title="Adhérents">
                         <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-                            <i class="fa fa-fw fa-wrench"></i>
-                            <span class="nav-link-text">Components</span>
+                            <i class="fa fa-fw fa-users"></i>
+                            <span class="nav-link-text">Adhérents</span>
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a href="#">Navbar</a>
+                                <a href="{{ route('admin.members.index') }}">Tous</a>
                             </li>
                             <li>
-                                <a href="#">Cards</a>
+                                <a href="{{ route('admin.members.waiting') }}">En attentes</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-                            <i class="fa fa-fw fa-file"></i>
-                            <span class="nav-link-text">Example Pages</span>
-                        </a>
-                        <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-                            <li>
-                                <a href="#">Login Page</a>
-                            </li>
-                            <li>
-                                <a href="#">Registration Page</a>
-                            </li>
-                            <li>
-                                <a href="#">Forgot Password Page</a>
-                            </li>
-                            <li>
-                                <a href="#">Blank Page</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-                            <i class="fa fa-fw fa-sitemap"></i>
-                            <span class="nav-link-text">Menu Levels</span>
-                        </a>
-                        <ul class="sidenav-second-level collapse" id="collapseMulti">
-                            <li>
-                                <a href="#">Second Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Item</a>
-                            </li>
-                            <li>
-                                <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-                                <ul class="sidenav-third-level collapse" id="collapseMulti2">
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-                        <a class="nav-link" href="#">
-                            <i class="fa fa-fw fa-link"></i>
-                            <span class="nav-link-text">Link</span>
-                        </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav sidenav-toggler">
