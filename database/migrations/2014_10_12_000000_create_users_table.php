@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->integer('member_number')->default(0);
             $table->rememberToken();
             $table->timestamps();
-            $table->integer('role');
+            $table->integer('role')->default(0);
             $table->dateTime('activated_at')->nullable();
         });
     }
