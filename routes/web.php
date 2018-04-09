@@ -58,3 +58,6 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//gestion des compte rendu (report) des AG
+Route::resource('reports', 'ReportsController');
