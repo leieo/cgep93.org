@@ -23,3 +23,27 @@ footer a:hover {
 footer .footer-icon::before {
   margin-right: 10px !important;
 }
+
+.sitemap {
+  padding: 30px;
+  color: grey;
+  background-color: black;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.sitemap a {
+  color: grey;
+}
+
+.sitemap-part1 {
+  grid-column: 1 / 2;
+}
+
+.sitemap-part2 {
+  grid-column: 2 / 3 ;
+}
+.sitemap-part3 {
+  grid-column: 3 / 4 ;
+}

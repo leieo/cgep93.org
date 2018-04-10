@@ -7,7 +7,6 @@
 		<br><br><br><br>
 		<p>hola que tal</p>
 
-		<div id="map"></div>
 	</div>
 </div>
 @endsection

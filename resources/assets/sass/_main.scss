@@ -5,6 +5,10 @@ body {
   padding-top: 56px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .marker {
   background-image: url('/images/marqueur.jpg');
   background-size: cover;
@@ -18,8 +22,4 @@ body {
   height: 400px;
   width: 600px;
   margin: 15px;
-}
-
-#testColor {
-  background: orange !important;
 }
