@@ -10,7 +10,7 @@
 
     <div class="form-group">
             {{Form::label('body','Résumé de la dernière Assemblée Générale')}}
-            {{Form::textarea('title','',['class'=> 'form-control','placeholder'=> 'Résumé de la dernière Assemblée Générale'])}}
+            {{Form::textarea('body','',['class'=> 'form-control','placeholder'=> 'Résumé de la dernière Assemblée Générale'])}}
     </div>
     {{Form::submit('Enregistrer', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}

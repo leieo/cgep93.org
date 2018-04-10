@@ -47,7 +47,6 @@ class ReportsController extends Controller
         $report->body = $request->input('body');
         $report->save();
 
-        vardump($report);
 
         return redirect('/reports');
     }
