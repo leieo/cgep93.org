@@ -47,6 +47,7 @@
                 </tr>
             </thead>
             <tbody>
+                <?php /** @var \App\User $user */ ?>
                 @foreach($users as $user)
                     <tr>
                         <td>{{ $user->id }}</td>

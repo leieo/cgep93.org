@@ -51,6 +51,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/registerSuccess', 'Auth\RegisterController@registerSuccess')->name('register.success');
+
 /**
  * BACK OFFICE ROUTES
  */

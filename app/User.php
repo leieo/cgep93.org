@@ -6,6 +6,18 @@ use Illuminate\Database\Query\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * @property int id
+ * @property string name
+ * @property string email
+ * @property string password
+ * @property string created_at
+ * @property string updated_at
+ * @property string activated_at
+ * @property int role
+ * @property int member_number
+ * @property ?int activated_by
+ */
 class User extends Authenticatable
 {
 	use Notifiable;
@@ -40,13 +52,14 @@ class User extends Authenticatable
 		'name', 'email', 'password', 'member_number', 'role', 'activated_at', 'activated_by'
 	];
 
+	/**
+	 * Return name of activated_by user or Nobody
+	 *
+	 * @return string
+	 */
 	public function activatedBy()
 	{
-		if (!is_null($this->activated_by)) {
-			return self::find($this->activated_by)->name;
-		} else {
-			return 'Nobody';
-		}
+		return !is_null($this->activated_by) ? self::find($this->activated_by)->name : 'Nobody';
 	}
 
 	/**
