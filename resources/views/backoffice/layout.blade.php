@@ -36,7 +36,7 @@
                                 <a href="{{ route('admin.members.waiting') }}">En attentes</a>
                             </li>
                             <li>
-                                <a href="{{ route('admin.members.refused') }}">Refusés</a>
+                                <a href="{{ route('admin.members.excluded') }}">Exclus</a>
                             </li>
                         </ul>
                     </li>
@@ -127,20 +127,13 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0 mr-lg-2">
-                            <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Search for...">
-                                <span class="input-group-append">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                        </form>
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-fw fa-user"></i>Mon compte
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-fw fa-sign-out"></i>Logout
+                            <i class="fa fa-fw fa-sign-out"></i>Deconnexion
                         </a>
                     </li>
                 </ul>
@@ -177,10 +170,13 @@
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-body">Êtes-vous sûr de vouloir vous déconnecter ?</div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="#">Logout</a>
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
+                        <a class="btn btn-primary" href="" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
+                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                     </div>
                 </div>
             </div>

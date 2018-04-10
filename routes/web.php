@@ -52,6 +52,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/member', 'MemberController@member')->name('member');
 
+Route::get('/registerSuccess', 'Auth\RegisterController@registerSuccess')->name('register.success');
+
 /**
  * BACK OFFICE ROUTES
  */
@@ -60,7 +62,8 @@ Route::group(['middleware' => ['web', 'auth', 'admin']], function () {
 
 	Route::get('/admin/members/accepted', 'Backoffice\MembersController@accepted')->name('admin.members.accepted');
 	Route::get('/admin/members/waiting', 'Backoffice\MembersController@waiting')->name('admin.members.waiting');
-	Route::get('/admin/members/refused', 'Backoffice\MembersController@refused')->name('admin.members.refused');
+	Route::get('/admin/members/excluded', 'Backoffice\MembersController@excluded')->name('admin.members.excluded');
 	Route::get('/admin/members/accept/{user}', 'Backoffice\MembersController@accept')->name('admin.members.accept');
-	Route::get('/admin/members/refuse/{user}', 'Backoffice\MembersController@refuse')->name('admin.members.refuse');
+	Route::get('/admin/members/exclude/{user}', 'Backoffice\MembersController@exclude')->name('admin.members.exclude');
 });
+

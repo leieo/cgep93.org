@@ -6,6 +6,7 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class MembersController extends Controller
 {
@@ -46,14 +47,14 @@ class MembersController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function refused()
+	public function excluded()
 	{
-		$users = User::byRole(User::ROLE_REFUSED);
+		$users = User::byRole(User::ROLE_EXCLUDE);
 
 		return view('backoffice.member.index', [
 			'users' => $users,
-			'status' => User::ROLES[User::ROLE_REFUSED],
-			'type' => User::ROLE_REFUSED
+			'status' => User::ROLES[User::ROLE_EXCLUDE],
+			'type' => User::ROLE_EXCLUDE
 		]);
 	}
 
@@ -67,9 +68,10 @@ class MembersController extends Controller
 	{
 		$user->role = User::ROLE_MEMBER;
 		$user->activated_at = Carbon::now();
+		$user->activated_by = Auth::user()->id;
 		$user->save();
 
-		return redirect()->route('admin.members.waiting');
+		return redirect()->back();
 	}
 
 	/**
@@ -78,11 +80,11 @@ class MembersController extends Controller
 	 * @param User $user
 	 * @return \Illuminate\Http\Response
 	 */
-	public function refuse(User $user)
+	public function exclude(User $user)
 	{
-		$user->role = User::ROLE_REFUSED;
+		$user->role = User::ROLE_EXCLUDE;
 		$user->save();
 
-		return redirect()->route('admin.members.waiting');
+		return redirect()->back();
 	}
 }
