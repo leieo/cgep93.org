@@ -72,9 +72,9 @@
       <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
       <script src="{{asset('js/map.js')}}"></script>
       <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-      <script>
-          CKEDITOR.replace( 'article-ckeditor' );
-      </script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
 
     </body>
 </html>

@@ -37,17 +37,15 @@ class ReportsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'title' => 'required',
-            'body' => 'required'
-        ]);
-
-        // Save datas
-        $report = new Report;
-        $report->title = $request->input('title');
-        $report->body = $request->input('body');
-        $report->save();
-
-
+            'title' => 'nullable',
+            'body' => 'nullable',
+        ]);    
+            // Save datas
+            $report = new Report;
+            $report->title = $request->input('title');
+            $report->body = $request->input('body');
+            $report->save();
+            
         return redirect('/reports')->with('success', 'Un nouveau compte rendu d\'AG a été créé!');
     }
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <a href="/reports/create" class="btn btn-primary"> Ajouter les dernières Assemblés Générales </a>
+    <a href="/reports/create" class="btn btn-primary"> Ajouter des comptes-rendus</a>
     <h1 class="text-center">Voici les dernières Assemblés Générales:</h1>
     @if(count($reports)>0)
         @foreach($reports as $report)
