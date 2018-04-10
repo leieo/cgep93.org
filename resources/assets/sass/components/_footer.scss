@@ -1,0 +1,25 @@
+footer h6 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+footer ul {
+  padding-left: 5px;
+  list-style: none;
+}
+
+footer p {
+  color: $white !important;
+}
+
+footer a {
+  color: $white !important;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer .footer-icon::before {
+  margin-right: 10px !important;
+}
