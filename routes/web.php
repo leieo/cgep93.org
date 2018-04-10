@@ -32,7 +32,7 @@ Route::get('/links', 'SearchController@links')->name('links');//Liens
 Route::get('/worldresearch', 'SearchController@worldresearch')->name('worldresearch');//Recherches dans le mondeRoute::get('/library');//Photothèque
 
 
-// Authentication Routes...
+// Authentification routes
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

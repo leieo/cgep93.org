@@ -48,9 +48,9 @@ class LoginController extends Controller
 	 */
 	public function login(Request $request)
 	{
-		$user = User::where('email', $request->input('email'))->firstOrFail();
-
-		if ($user->role == User::ROLE_WAITING || $user->role == User::ROLE_EXCLUDE) {
+		$user = User::where('email', $request->input('email'))->first();
+		
+		if (!is_null($user) && ($user->role == User::ROLE_WAITING || $user->role == User::ROLE_EXCLUDE)) {
 
 			if ($user->role == User::ROLE_WAITING) {
 				$request->session()->flash('error', 'Votre compte est toujours en attente.');
