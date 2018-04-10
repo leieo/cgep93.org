@@ -8,7 +8,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
  * @property int id
- * @property string name
+ * @property string first_name
+ * @property string last_name
  * @property string email
  * @property string password
  * @property string created_at
@@ -20,6 +21,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  */
 class User extends Authenticatable
 {
+
 	use Notifiable;
 
 	const ROLE_WAITING = 0;
@@ -43,13 +45,14 @@ class User extends Authenticatable
 		'password', 'remember_token',
 	];
 
+
 	/**
 	 * The attributes that are mass assignable.
 	 *
 	 * @var array
 	 */
 	protected $fillable = [
-		'name', 'email', 'password', 'member_number', 'role', 'activated_at', 'activated_by'
+		'first_name', 'last_name', 'email', 'password', 'member_number', 'role', 'activated_at', 'activated_by'
 	];
 
 	/**

@@ -50,6 +50,7 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/member', 'MemberController@member')->name('member');
 
 /**
  * BACK OFFICE ROUTES
@@ -63,3 +64,4 @@ Route::group(['middleware' => ['web', 'auth', 'admin']], function () {
 	Route::get('/admin/members/accept/{user}', 'Backoffice\MembersController@accept')->name('admin.members.accept');
 	Route::get('/admin/members/exclude/{user}', 'Backoffice\MembersController@exclude')->name('admin.members.exclude');
 });
+
