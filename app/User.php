@@ -3,8 +3,10 @@
 namespace App;
 
 use Illuminate\Database\Query\Builder;
+use Illuminate\Http\Request;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 /**
  * @property int id
@@ -73,4 +75,5 @@ class User extends Authenticatable
 	{
 		return $query->where('role', $role)->orderBy('activated_at', 'DESC')->get();
 	}
+
 }
