@@ -6,7 +6,7 @@
 
 		<br><br><br><br>
 		<p>hola que tal</p>
-
+		@include('map')
 	</div>
 </div>
 @endsection
