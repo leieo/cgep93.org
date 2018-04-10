@@ -1,80 +1,9 @@
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 // Variables
 @import "variables";
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
 
-html,
-body {
-  overflow-x: hidden;
-  /* Prevent scroll on narrow devices */
-  padding-top: 56px;
-}
+// Imports
+@import "main";
 
-.navbar-brand {
-  padding-bottom: 0px;
-}
-
-.navbar {
-  padding-bottom: 0px;
-}
-
-.navbar-brand-laptop-subtitle {
-  font-size: 14px;
-}
-
-@media (min-width: 769px) {
-  .navbar-brand-mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-brand-laptop {
-    display: none;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 56px;
-    /* Height of navbar */
-    bottom: 0;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    background-color: var(--gray-dark);
-    transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  .offcanvas-collapse.open {
-    -webkit-transform: translateX(-1rem);
-    transform: translateX(-1rem);
-    /* Account for horizontal padding on navbar */
-  }
-}
-
-.marker {
-  background-image: url('/images/marqueur.jpg');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#map {
-  height: 400px;
-  width: 600px;
-  margin: 15px;
-}
+@import "components/navbar";
+@import "components/footer";
+@import "components/map";

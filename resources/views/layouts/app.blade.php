@@ -27,33 +27,7 @@
 
         <!-- Styles -->
         <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
-        <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet'/>
-
-        <style>
-        
-          footer {
-          }
-
-          footer h6 {
-            font-weight: 600;
-            font-size: 16px;
-          }
-
-          footer ul {
-            padding-left: 5px;
-            list-style: none;
-          }
-
-          .sitemap {
-            padding: 20px;
-            font-size: 12px;
-          }
-
-          .sitemap a {
-            color: lightgrey;
-          }
-
-        </style>
+        <link href="{{asset('css/main.css')}}" rel="stylesheet" type="text/css">
 
     </head>
 
@@ -78,6 +52,5 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
         <script src="{{asset('js/map.js')}}"></script>
-
     </body>
 </html>

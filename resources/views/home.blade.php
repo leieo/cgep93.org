@@ -5,9 +5,8 @@
 	<div class="row">
 
 		<br><br><br><br>
-		hola que tal
-
-		<div id="map"></div>
+		<p>hola que tal</p>
+		@include('map')
 	</div>
 </div>
 @endsection
