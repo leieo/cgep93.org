@@ -13,22 +13,13 @@ class User extends Authenticatable
 	const ROLE_WAITING = 0;
 	const ROLE_ADMIN = 1;
 	const ROLE_MEMBER = 2;
-	const ROLE_REFUSED = 3;
+	const ROLE_EXCLUDE = 3;
 
 	const ROLES = [
 		self::ROLE_WAITING => 'En attente',
 		self::ROLE_ADMIN => 'Admin',
 		self::ROLE_MEMBER => 'Adhérent',
-		self::ROLE_REFUSED => 'Refusé'
-	];
-
-	/**
-	 * The attributes that are mass assignable.
-	 *
-	 * @var array
-	 */
-	protected $fillable = [
-		'name', 'email', 'password',
+		self::ROLE_EXCLUDE => 'Exclu'
 	];
 
 	/**
@@ -40,6 +31,23 @@ class User extends Authenticatable
 		'password', 'remember_token',
 	];
 
+	/**
+	 * The attributes that are mass assignable.
+	 *
+	 * @var array
+	 */
+	protected $fillable = [
+		'name', 'email', 'password', 'member_number', 'role', 'activated_at', 'activated_by'
+	];
+
+	public function activatedBy()
+	{
+		if (!is_null($this->activated_by)) {
+			return self::find($this->activated_by)->name;
+		} else {
+			return 'Nobody';
+		}
+	}
 
 	/**
 	 * @param Builder $query

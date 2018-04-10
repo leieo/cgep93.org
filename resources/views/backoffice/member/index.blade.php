@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-    @if($type == \App\User::ROLE_WAITING || $type == \App\User::ROLE_REFUSED)
+    @if($type == \App\User::ROLE_WAITING || $type == \App\User::ROLE_EXCLUDE)
         <table class="table">
             <thead>
                 <tr>
@@ -27,7 +27,7 @@
                         <td>
                             <a href="{{ route('admin.members.accept', $user) }}" class="btn btn-success">Accepter</a>
                             @if($type == \App\User::ROLE_WAITING)
-                                <a href="{{ route('admin.members.refuse', $user) }}" class="btn btn-danger">Refuser</a>
+                                <a href="{{ route('admin.members.exclude', $user) }}" class="btn btn-danger">Exclure</a>
                             @endif
                         </td>
                     </tr>
@@ -41,7 +41,9 @@
                     <th scope="col">#</th>
                     <th scope="col">Nom</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Activé le ...</th>
+                    <th scope="col">Activé le</th>
+                    <th scope="col">Activé par</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -51,6 +53,8 @@
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
                         <td>{{ $user->activated_at }}</td>
+                        <td>{{ $user->activatedBy() }}</td>
+                        <td><a href="{{ route('admin.members.exclude', $user) }}" class="btn btn-danger">Exclure</a></td>
                     </tr>
                 @endforeach
             </tbody>
