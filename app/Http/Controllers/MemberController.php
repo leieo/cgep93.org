@@ -8,10 +8,9 @@ use Illuminate\Support\Facades\Auth;
 class MemberController extends Controller
 {
     //
-        public function member()
+    public function member()
     {
         $user = Auth::user();
         return view('member', compact('user'));
-
     }
 }

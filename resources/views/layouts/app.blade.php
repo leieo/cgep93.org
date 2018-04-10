@@ -30,44 +30,24 @@
         <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet'/>
 
         <style>
+        
+          footer {
+          }
 
-            footer {
-            }
+          footer h6 {
+            font-weight: 600;
+            font-size: 14px;
+          }
 
-            footer h6 {
-                font-weight: 600;
-                font-size: 14px;
-            }
+          footer ul {
+            padding-left: 5px;
+            list-style: none;
+          }
 
-            footer ul {
-                padding-left: 5px;
-                list-style: none;
-            }
-
-            .sitemap {
-                padding: 30px;
-                color: grey;
-                background-color: black;
-                font-size: 12px;
-                display: grid;
-                grid-template-columns: 200px 200px 200px;
-            }
-
-            .sitemap a {
-                color: grey;
-            }
-
-            .sitemap-part1 {
-                grid-column: 1 / 2;
-            }
-
-            .sitemap-part2 {
-                grid-column: 2 / 3;
-            }
-
-            .sitemap-part3 {
-                grid-column: 3 / 4;
-            }
+          .sitemap {
+            padding: 30px;
+            font-size: 12px;
+          }
 
         </style>
 
