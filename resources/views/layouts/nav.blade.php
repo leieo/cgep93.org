@@ -29,20 +29,11 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie Associative</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-<<<<<<< Updated upstream
-              <a class="dropdown-item" href="{{route('communitylife')}}">Bulletins</a>
-              <a class="dropdown-item" href="#">Liste sommaire</a>
-              <a class="dropdown-item" href="#">Relevés papiers</a>
-              <a class="dropdown-item" href="#">Génécole</a>
-              <a class="dropdown-item" href="#">Événements</a>
-=======
                 <a class="dropdown-item" href="{{route('bulletins')}}">Bulletins</a>
                 <a class="dropdown-item" href="{{route('summary')}}">Liste sommaire</a>
                 <a class="dropdown-item" href="{{route('paperstatements')}}">Relevés papiers</a>
                 <a class="dropdown-item" href="{{route('genecole')}}">Génécole</a>
                 <a class="dropdown-item" href="{{route('events')}}">Événements</a>
->>>>>>> Stashed changes
-
             </div>
           </li>
 
