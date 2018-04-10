@@ -23,22 +23,21 @@ Route::get('/association', 'AssociationController@association')->name('associati
 
 // Vie Associative Route - Longue page avec ancres et renvoi pour chaque section
 Route::get('/communitylife', 'CommunitylifeController@communitylife')->name('communitylife'); //Vie associative
-Route::get('/bulletins'); //Bulletins
-Route::get('/summary');//Listes sommaires
-Route::get('/paperstatements');//Relevés papiers
-Route::get('/genecole');//Génécole
-Route::get('/events', 'EventController@Event')->name('event');//Evènements
+Route::get('/bulletins', 'CommunitylifeController@bulletins')->name('bulletins');  //Bulletins
+Route::get('/summary', 'CommunitylifeController@summary')->name('summary');//Listes sommaires
+Route::get('/paperstatements', 'CommunitylifeController@paperstatements')->name('paperstatements');//Relevés papiers
+Route::get('/genecole', 'CommunitylifeController@genecole')->name('genecole');//Génécole
+Route::get('/events', 'CommunitylifeController@events')->name('events');//Evènements
 
 // Recherches
 Route::get('/search', 'SearchController@search')->name('search');//Recherche
-Route::get('/geneabank');//Généabank
-Route::get('/bigenet');//Bigenet
-Route::get('/tips');//Trucs et astuces
-Route::get('/department');//Département
-Route::get('/archives');//Archives
-Route::get('/links');//Liens
-Route::get('/worldresearch');//Recherches dans le monde
-Route::get('/library');//Photothèque
+Route::get('/geneabank', 'SearchController@geneabank')->name('geneabank'); //Généabank
+Route::get('/bigenet', 'SearchController@bigenet')->name('bigenet'); //Bigenet
+Route::get('/tips', 'SearchController@tips')->name('tips');//Trucs et astuces
+Route::get('/department', 'SearchController@department')->name('department'); //Département
+Route::get('/archives', 'SearchController@archives')->name('archives'); //Archives
+Route::get('/links', 'SearchController@links')->name('links');//Liens
+Route::get('/worldresearch', 'SearchController@worldresearch')->name('worldresearch');//Recherches dans le mondeRoute::get('/library');//Photothèque
 
 
 // Authentication Routes...

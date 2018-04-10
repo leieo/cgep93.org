@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
+	<div class="row">
 
-            <br><br><br><br>
-            hola que tal
+		<br><br><br><br>
+		hola que tal
 
-    </div>
+		<div id="map"></div>
+	</div>
 </div>
- <div id="map"></div>
 @endsection

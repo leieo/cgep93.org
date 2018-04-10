@@ -28,25 +28,24 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie associative</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="{{route('communitylife')}}">Bulletins</a>
-                <a class="dropdown-item" href="#">Liste sommaire</a>
-                <a class="dropdown-item" href="#">Relevés papiers</a>
-                <a class="dropdown-item" href="#">Génécole</a>
-                <a class="dropdown-item" href="{{route('event')}}">Événements</a>
-
+                <a class="dropdown-item" href="{{route('bulletins')}}">Bulletins</a>
+                <a class="dropdown-item" href="{{route('summary')}}">Liste sommaire</a>
+                <a class="dropdown-item" href="{{route('paperstatements')}}">Relevés papiers</a>
+                <a class="dropdown-item" href="{{route('genecole')}}">Génécole</a>
+                <a class="dropdown-item" href="{{route('events')}}">Événements</a>
             </div>
         </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recherches</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="{{route('search')}}">Généabank</a>
-              <a class="dropdown-item" href="#">Bigenet</a>
-              <a class="dropdown-item" href="#">Trucs et astuces</a>
-              <a class="dropdown-item" href="#">Département</a>
-              <a class="dropdown-item" href="#">Archives</a>
-              <a class="dropdown-item" href="#">Liens</a>
-              <a class="dropdown-item" href="#">Recherches dans le Monde</a>
+              <a class="dropdown-item" href="{{route('geneabank')}}">Généabank</a>
+              <a class="dropdown-item" href="{{route('bigenet')}}">Bigenet</a>
+              <a class="dropdown-item" href="{{route('tips')}}">Trucs et astuces</a>
+              <a class="dropdown-item" href="{{route('department')}}">Département</a>
+              <a class="dropdown-item" href="{{route('archives')}}">Archives</a>
+              <a class="dropdown-item" href="{{route('links')}}">Liens</a>
+              <a class="dropdown-item" href="{{route('worldresearch')}}">Recherches dans le Monde</a>
             </div>
           </li>
 
