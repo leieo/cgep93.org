@@ -14,11 +14,11 @@
 Route::get('/', 'HomeController@index');
 
 // Footer Routes
-    Route::get('/contact', 'ContactController@contact')->name('contact'); //formulaire de contact
-    Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //formulaire de recherche
+Route::get('/contact', 'ContactController@contact')->name('contact'); //formulaire de contact
+Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //formulaire de recherche
 
 // Association Route Longue page avec ancres - renvoi sur le footer pour Nous Contacter
-    Route::get('/association', 'AssociationController@association')->name('association');
+Route::get('/association', 'AssociationController@association')->name('association');
 
 // Vie Associative Route - Longue page avec ancres et renvoi pour chaque section
 Route::get('/communitylife', 'CommunitylifeController@communitylife')->name('communitylife'); //Vie associative
@@ -36,8 +36,7 @@ Route::get('/tips', 'SearchController@tips')->name('tips');//Trucs et astuces
 Route::get('/department', 'SearchController@department')->name('department'); //Département
 Route::get('/archives', 'SearchController@archives')->name('archives'); //Archives
 Route::get('/links', 'SearchController@links')->name('links');//Liens
-Route::get('/worldresearch', 'SearchController@worldresearch')->name('worldresearch');//Recherches dans le monde
-Route::get('/library');//Photothèque
+Route::get('/worldresearch', 'SearchController@worldresearch')->name('worldresearch');//Recherches dans le mondeRoute::get('/library');//Photothèque
 
 
 // Authentication Routes...

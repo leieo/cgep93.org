@@ -1,33 +1,32 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-          <img src="../assets/img/logo.gif" width="30" height="30" alt="">
+          <!--img src="{{asset('assets/pictures/Logo.gif')}}" width="30" height="30" alt="logo"-->
       </a>
       <p>
-        <a class="navbar-brand navbar-brand-laptop" href="/public">Cercle Généalogique de l'Est Parisien</a>
+        <a class="navbar-brand navbar-brand-laptop" href="/">Cercle Généalogique de l'Est Parisien</a>
         <br class="navbar-brand navbar-brand-laptop">
         <a class="navbar-brand navbar-brand-mobile" href="#">CGEP 93</a>
         <a class="navbar-brand navbar-brand-laptop navbar-brand-laptop-subtitle" href="#">Généalogie et Histoire de Seine-Saint-Denis</a>
       </p>
-      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+      <button class="navbar-toggler p-0 border-0" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <div class="navbar-collapse collapse" id="navbar" style="max-height: 36%">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'Association</a>
+            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'Association</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="{{route('association')}}">Statuts</a>
               <a class="dropdown-item" href="#">Membres du CA</a>
               <a class="dropdown-item" href="#">Règlement intérieur</a>
               <a class="dropdown-item" href="#">Adhésions</a>
               <a class="dropdown-item" href="#">Infos pratiques</a>
-              <a class="dropdown-item" href="#">Nous contacter</a>
+              <a class="dropdown-item" href="mailto:contact@cgep93.org">Nous contacter</a>
             </div>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie Associative</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie associative</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
                 <a class="dropdown-item" href="{{route('bulletins')}}">Bulletins</a>
                 <a class="dropdown-item" href="{{route('summary')}}">Liste sommaire</a>
@@ -35,10 +34,10 @@
                 <a class="dropdown-item" href="{{route('genecole')}}">Génécole</a>
                 <a class="dropdown-item" href="{{route('events')}}">Événements</a>
             </div>
-          </li>
+        </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recherches</a>
+            <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recherches</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="{{route('geneabank')}}">Généabank</a>
               <a class="dropdown-item" href="{{route('bigenet')}}">Bigenet</a>
@@ -49,8 +48,6 @@
               <a class="dropdown-item" href="{{route('worldresearch')}}">Recherches dans le Monde</a>
             </div>
           </li>
-
-
 
           <li class="nav-item">
             @guest
