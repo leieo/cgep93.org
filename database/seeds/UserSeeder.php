@@ -19,7 +19,8 @@ class UserSeeder extends Seeder
 		// Création de 3 admins
 		for ($i = 0; $i < 3; $i++) {
 			DB::table('users')->insert([
-				"name" => "johndoe$i",
+				"first_name" => "john",
+				"last_name" => "doe$i",
 				"email" => "john$i@doe.com",
 				"password" => bcrypt('0000'),
 				"role" => User::ROLE_ADMIN,
@@ -30,7 +31,8 @@ class UserSeeder extends Seeder
 		// Création de 10 utilisateurs en attente
 		for ($i = 0; $i < 10; $i++) {
 			DB::table('users')->insert([
-				"name" => $faker->name,
+				"first_name" => $faker->firstName,
+				"last_name" => $faker->lastName,
 				"email" => $faker->email,
 				"password" => bcrypt($faker->password)
 			]);
@@ -39,7 +41,8 @@ class UserSeeder extends Seeder
 		// Création de 10 utilisateurs accepté
 		for ($i = 0; $i < 10; $i++) {
 			DB::table('users')->insert([
-				"name" => $faker->name,
+                "first_name" => $faker->firstName,
+                "last_name" => $faker->lastName,
 				"email" => $faker->email,
 				"password" => bcrypt($faker->password),
 				"role" => User::ROLE_MEMBER,
