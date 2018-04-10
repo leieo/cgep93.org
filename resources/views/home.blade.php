@@ -2,11 +2,9 @@
 
 @section('content')
 <div class="container">
-	<div class="row">
 
-		<br><br><br><br>
-		<p>hola que tal</p>
-
-	</div>
+		<p>Carte du département de Seine-Saint-Denis</p>
+		
+	@include('map')
 </div>
 @endsection
