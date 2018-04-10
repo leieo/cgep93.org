@@ -36,7 +36,7 @@
 
           footer h6 {
             font-weight: 600;
-            font-size: 14px;
+            font-size: 16px;
           }
 
           footer ul {
@@ -45,8 +45,12 @@
           }
 
           .sitemap {
-            padding: 30px;
+            padding: 20px;
             font-size: 12px;
+          }
+
+          .sitemap a {
+            color: lightgrey;
           }
 
         </style>
