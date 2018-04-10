@@ -13,6 +13,7 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
+                    <th scope="col">Prénom</th>
                     <th scope="col">Nom</th>
                     <th scope="col">Email</th>
                     <th scope="col">Actions</th>
@@ -22,7 +23,8 @@
                 @foreach($users as $user)
                     <tr>
                         <td>{{ $user->id }}</td>
-                        <td>{{ $user->name }}</td>
+                        <td>{{ $user->first_name }}</td>
+                        <td>{{ $user->last_name }}</td>
                         <td>{{ $user->email }}</td>
                         <td>
                             <a href="{{ route('admin.members.accept', $user) }}" class="btn btn-success">Accepter</a>
@@ -39,6 +41,7 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
+                    <th scope="col">Prénom</th>
                     <th scope="col">Nom</th>
                     <th scope="col">Email</th>
                     <th scope="col">Activé le</th>
@@ -51,7 +54,8 @@
                 @foreach($users as $user)
                     <tr>
                         <td>{{ $user->id }}</td>
-                        <td>{{ $user->name }}</td>
+                        <td>{{ $user->first_name }}</td>
+                        <td>{{ $user->last_name }}</td>
                         <td>{{ $user->email }}</td>
                         <td>{{ $user->activated_at }}</td>
                         <td>{{ $user->activatedBy() }}</td>
