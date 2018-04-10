@@ -5,7 +5,7 @@
 	<div class="row">
 
 		<br><br><br><br>
-		Hello "JeanMiMiDu93"
+		Hello {{ $user_name }} 
 		<br />
 		Bienvenue dans votre espace adhérent !
 
