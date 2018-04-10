@@ -47,12 +47,9 @@ class RegisterController extends Controller
 		$this->validator($request->all())->validate();
 		$this->create($request->all());
 
-		return redirect()->route('register.success');
-	}
+		$request->session()->flash('success', 'Votre demande d\'adhésion à bien été prise en compte.');
 
-	public function registerSuccess()
-	{
-    	return view('auth.registerSuccess');
+		return redirect()->route('home');
 	}
 
 	/**
