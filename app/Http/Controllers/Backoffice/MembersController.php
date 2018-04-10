@@ -3,98 +3,86 @@
 namespace App\Http\Controllers\Backoffice;
 
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class MembersController extends Controller
 {
 	/**
-	 * Display a listing of the resource.
+	 * Display all accepted members.
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function index()
+	public function accepted()
 	{
-		$users = User::all();
+		$users = User::byRole(User::ROLE_MEMBER);
 
-		return view('backoffice.member.index', compact('users'));
+		return view('backoffice.member.index', [
+			'users' => $users,
+			'status' => User::ROLES[User::ROLE_MEMBER],
+			'type' => User::ROLE_MEMBER
+		]);
 	}
 
 	/**
-	 * Display all waiting users
+	 * Display all waiting members.
 	 *
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @return \Illuminate\Http\Response
 	 */
 	public function waiting()
 	{
-		$users = User::where('activated_at', null)->get();
+		$users = User::byRole(User::ROLE_WAITING);
 
-		return view('backoffice.member.index', compact('users'));
+		return view('backoffice.member.index', [
+			'users' => $users,
+			'status' => User::ROLES[User::ROLE_WAITING],
+			'type' => User::ROLE_WAITING
+		]);
 	}
 
 	/**
-	 * Show the form for creating a new resource.
+	 * Display all refused members.
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function create()
+	public function refused()
 	{
-		//
+		$users = User::byRole(User::ROLE_REFUSED);
+
+		return view('backoffice.member.index', [
+			'users' => $users,
+			'status' => User::ROLES[User::ROLE_REFUSED],
+			'type' => User::ROLE_REFUSED
+		]);
 	}
 
 	/**
-	 * Store a newly created resource in storage.
+	 * Accept a member request
 	 *
-	 * @param  \Illuminate\Http\Request $request
+	 * @param User $user
 	 * @return \Illuminate\Http\Response
 	 */
-	public function store(Request $request)
+	public function accept(User $user)
 	{
-		//
+		$user->role = User::ROLE_MEMBER;
+		$user->activated_at = Carbon::now();
+		$user->save();
+
+		return redirect()->route('admin.members.waiting');
 	}
 
 	/**
-	 * Display the specified resource.
+	 * Refuse a member request
 	 *
-	 * @param  \App\User $user
+	 * @param User $user
 	 * @return \Illuminate\Http\Response
 	 */
-	public function show(User $user)
+	public function refuse(User $user)
 	{
-		//
-	}
+		$user->role = User::ROLE_REFUSED;
+		$user->save();
 
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  \App\User $user
-	 * @return \Illuminate\Http\Response
-	 */
-	public function edit(User $user)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  \Illuminate\Http\Request $request
-	 * @param  \App\User $user
-	 * @return \Illuminate\Http\Response
-	 */
-	public function update(Request $request, User $user)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  \App\User $user
-	 * @return \Illuminate\Http\Response
-	 */
-	public function destroy(User $user)
-	{
-		//
+		return redirect()->route('admin.members.waiting');
 	}
 }

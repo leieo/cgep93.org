@@ -16,9 +16,7 @@ class UserSeeder extends Seeder
 	{
 		$faker = \Faker\Factory::create();
 
-		/**
-		 * Génération de 3 admins
-		 */
+		// Création de 3 admins
 		for ($i = 0; $i < 3; $i++) {
 			DB::table('users')->insert([
 				"name" => "johndoe$i",
@@ -29,7 +27,7 @@ class UserSeeder extends Seeder
 			]);
 		}
 
-		// Création de 10 Utilisateur en attente
+		// Création de 10 utilisateurs en attente
 		for ($i = 0; $i < 10; $i++) {
 			DB::table('users')->insert([
 				"name" => $faker->name,
@@ -38,13 +36,14 @@ class UserSeeder extends Seeder
 			]);
 		}
 
-		// Création de 10 Utilisateur accepté
+		// Création de 10 utilisateurs accepté
 		for ($i = 0; $i < 10; $i++) {
 			DB::table('users')->insert([
 				"name" => $faker->name,
 				"email" => $faker->email,
 				"password" => bcrypt($faker->password),
-				"role" => User::ROLE_MEMBER
+				"role" => User::ROLE_MEMBER,
+				"activated_at" => Carbon::createFromTimestamp($faker->unixTime)
 			]);
 		}
 	}

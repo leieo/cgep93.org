@@ -54,9 +54,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 /**
  * BACK OFFICE ROUTES
  */
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['web', 'auth', 'admin']], function () {
 	Route::get('/admin', 'Backoffice\PagesController@home')->name('admin.home');
 
-	Route::get('/admin/members', 'Backoffice\MembersController@index')->name('admin.members.index');
+	Route::get('/admin/members/accepted', 'Backoffice\MembersController@accepted')->name('admin.members.accepted');
 	Route::get('/admin/members/waiting', 'Backoffice\MembersController@waiting')->name('admin.members.waiting');
+	Route::get('/admin/members/refused', 'Backoffice\MembersController@refused')->name('admin.members.refused');
+	Route::get('/admin/members/accept/{user}', 'Backoffice\MembersController@accept')->name('admin.members.accept');
+	Route::get('/admin/members/refuse/{user}', 'Backoffice\MembersController@refuse')->name('admin.members.refuse');
 });

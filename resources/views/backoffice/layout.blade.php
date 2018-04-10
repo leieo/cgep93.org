@@ -30,10 +30,13 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a href="{{ route('admin.members.index') }}">Tous</a>
+                                <a href="{{ route('admin.members.accepted') }}">Acceptés</a>
                             </li>
                             <li>
                                 <a href="{{ route('admin.members.waiting') }}">En attentes</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.members.refused') }}">Refusés</a>
                             </li>
                         </ul>
                     </li>
