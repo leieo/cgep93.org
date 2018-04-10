@@ -7,7 +7,10 @@
         @foreach($reports as $report)
         <div class="jumbotron">
                 <a href="/reports/{{$report->id}}/edit" class="btn btn-primary"> Modifier le compte-rendu</a>
-                <a href="/reports/create" class="btn btn-danger"> Supprimer le compte-rendu </a>
+                {!!Form::open(['action' => ['ReportsController@destroy',$report->id], 'method'=> 'post','class' => 'pull-right'])!!}
+                    {{Form::hidden('_method','DELETE')}}
+                    {{Form::submit('Supprimer le compte-rendu', ['class' => 'btn btn-danger'])}}
+                {!!Form::close()!!}
             <h3>{!!$report->title!!}</h3>
             <p>{!!$report->body!!}</p>
             <small> {{$report->created_at}} </small>

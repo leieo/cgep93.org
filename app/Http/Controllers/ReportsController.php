@@ -106,6 +106,9 @@ class ReportsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $report = Report::find($id);
+        $report->delete();
+
+        return redirect('/reports')->with('success', 'Un compte rendu a été supprimé!');
     }
 }
