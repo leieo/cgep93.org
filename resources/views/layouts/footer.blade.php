@@ -39,12 +39,12 @@
 		<div class="col-md-4 col-sm-12">
 			<h6>L'association</h6>
 			<ul>
-				<li><a href="">Statuts</a></li>
-				<li><a href="">Membre du CA</a></li>
-				<li><a href="">Règlement intérieur</a></li>
-				<li><a href="">Adhésions</a></li><a href="">
-				<li><a href="">Infos pratiques</a></li>
-				<li><a href="">Nous contacter</a></li>
+				<li><a href="{{route('association')}}#statuts">Statuts</a></li>
+				<li><a href="{{route('association')}}#membres_ca">Membres du CA</a></li>
+				<li><a href="{{route('association')}}#reglement">Règlement intérieur</a></li>
+				<li><a href="{{route('association')}}#adhesions">Adhésions</a></li><a href="">
+				<li><a href="{{route('association')}}#infos">Infos pratiques</a></li>
+				<li><a href="{{route('association')}}#contact">Nous contacter</a></li>
 			</ul>
 		</div>
 		<div class="col-md-4 col-sm-12">
