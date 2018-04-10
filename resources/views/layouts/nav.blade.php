@@ -51,7 +51,7 @@
 
           <li class="nav-item">
             @guest
-              <a class="nav-link" href="login">Espace membre</a>
+              <a class="nav-link" href="login">Espace membres</a>
             @endguest
 
             @auth

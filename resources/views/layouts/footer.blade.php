@@ -68,7 +68,7 @@
 				<li><a href="">Génécole</a></li>
 				<li><a href="">Évènements</a></li>
 			</ul>
-			<h6><a href="">Espace Membres</a></h6>
+			<h6><a href="">Espace membres</a></h6>
 		</div>
 	</section>
 </footer>

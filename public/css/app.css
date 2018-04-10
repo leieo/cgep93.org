@@ -45,6 +45,10 @@ body {
   color: #E8E8E8;
 }
 
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+  color: #FFFFFF;
+}
+
 .navbar-dark .navbar-brand {
   color: #E8E8E8;
 }
@@ -111,6 +115,7 @@ footer a {
 
 footer a:hover {
   text-decoration: none;
+  color: #FFFFFF !important;
 }
 
 footer .footer-icon::before {
