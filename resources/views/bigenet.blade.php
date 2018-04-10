@@ -4,8 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <br><br><br><br>
-            hola que tal
+            <h1>Bigenet</h1>
         </div>
     </div>
 </div>
