@@ -64,6 +64,95 @@
             grid-column: 3 / 4 ;
           }
 
+          /* CSS pour la carte interactive*/
+
+          body {
+    font-family: serif;
+    background-color: #F5F5F5;
+    color: #415F77;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.map {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 70vw;
+    height: auto;
+    margin: 20px auto;
+}
+
+.map__image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right:300px;
+    bottom: 0;
+}
+
+.map__image svg {
+    width: 100%;
+    height: 100%;
+}
+
+.map__image path {
+    fill: #415F77;
+    stroke: #769cb5;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+.map__image .is-active path {
+    fill: #FC5050;
+}
+
+/* Liste
+   ========================================================================== */
+.map__list {
+    float: right;
+    width: 280px;
+    border-left: 1px solid #dbdbdb;
+}
+
+.map__list ul, .map__list li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.map__list a {
+    padding-left: 10px;
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.map__list a.is-active {
+    color: #FC5050;
+    background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 720px){
+    .map__list {
+        float: none;
+        width: 100%;
+        border-left: 1px solid #dbdbdb;
+    }
+    .map__image{
+        padding: 10px;
+        position: static;
+        width: 100%;
+    }
+}
+
         </style>
 
     </head>
@@ -79,6 +168,8 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
       <script src="{{asset('js/map.js')}}"></script>
+      <script src="{{asset('js/carte.js')}}"></script>
+
 
     </body>
 </html>
