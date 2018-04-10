@@ -48,7 +48,7 @@ class ReportsController extends Controller
         $report->save();
 
 
-        return redirect('/reports');
+        return redirect('/reports')->with('success', 'Un nouveau compte rendu d\'AG a été créé!');
     }
 
     /**

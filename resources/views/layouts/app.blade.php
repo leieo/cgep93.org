@@ -62,6 +62,7 @@
     <body class="bg-light">
 
       @include('layouts.nav')
+        @include('layouts.messages')
           @yield('content')
       @include('layouts.footer')
 
@@ -70,6 +71,10 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
       <script src="{{asset('js/map.js')}}"></script>
+      <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+      <script>
+          CKEDITOR.replace( 'article-ckeditor' );
+      </script>
 
     </body>
 </html>
