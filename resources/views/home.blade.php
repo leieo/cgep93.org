@@ -5,7 +5,7 @@
 	<div class="row">
 
 		<br><br><br><br>
-		hola que tal
+		<p>hola que tal</p>
 
 		<div id="map"></div>
 	</div>
