@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117091282-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-117091282-1');
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,26 +42,7 @@
 
           .sitemap {
             padding: 30px;
-            color: grey;
-            background-color: black;
             font-size: 12px;
-            display: grid;
-            grid-template-columns: 200px 200px 200px;
-          }
-
-          .sitemap a {
-            color: grey;
-          }
-
-          .sitemap-part1 {
-            grid-column: 1 / 2;
-          }
-
-          .sitemap-part2 {
-            grid-column: 2 / 3 ;
-          }
-          .sitemap-part3 {
-            grid-column: 3 / 4 ;
           }
 
         </style>
