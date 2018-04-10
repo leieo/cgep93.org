@@ -28,6 +28,8 @@ class MemberController extends Controller
 
         $validateData = $request->validate($validateRules);
 
+        $validateData['password'] = bcrypt($validateData['password']);
+
         $user->fill($validateData);
 
         $user->save();
