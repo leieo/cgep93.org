@@ -1,48 +1,47 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <br><br><br><br>
-            <h1> Remplissez le formulaire suivant pour nous contacter :</h1>
-                <form method="post" action="contact@cgep93.org.">
 
-                    <label for="sexe">Vous êtes ...</label> <br>
-                            <div class="radio">
-                                    <label>
-                                        <input type="radio" name="sexe" id="sexe-1" value="homme">
-                                        Un homme
-                                    </label>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header">Formulaire de contact !</div>
+                    <div class="card-body">
+                        {!! Form::open(['action' => 'ContactController@sendMail','method' => 'get']) !!}
+
+                        <div class="form-group">
+                            {!! Form::label('name', 'Votre Nom') !!}
+                            {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                        </div>
+
+                        <div class="form-group">
+                            {!! Form::label('email', 'Votre E-mail') !!}
+                            {!! Form::text('email', null, ['class' => 'form-control']) !!}
+                        </div>
+
+                        <div class="form-group">
+                            {!! Form::label('msg', 'Votre Message') !!}
+                            {!! Form::textarea('msg', null, ['class' => 'form-control']) !!}
+                        </div>
+
+                        {!! Form::submit('Envoyer', ['class' => 'btn btn-info']) !!}
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
                             </div>
+                        @endif
 
-                            <div class="radio">
-                                    <label>
-                                        <input type="radio" name="sexe" id="sexe-2" value="femme">
-                                        Une femme
-                                    </label>
-                            </div>
-
-                            <label>Quel est votre prénom?</label> <br>
-                            <input type="text"name="prenom" id="prenom" /> <br>
-
-                            <label>Quel est votre nom? *</label> <br>
-                            <input type="text"name="nom" id="nom" required /> <br>
-                        
-                            <label>Quel est l'objet de votre message? *</label> <br>
-                            <input type="text" name="raison-contact" id="raison-contact" required> <br>
-                        
-                            <label> Quel est votre email? * </label> <br>
-                            <input type="email" name="email" id="your-email" required> <br>
-                        
-                            <label>Quel est votre message? *</label> <br>
-                            <textarea cols="30" rows="10" name="message" id="message" required></textarea> <br>
-
-                        <button type="submit">Submit</button>
-                </form>
-                    Les champs avec une astérisques (*) sont obligatoires. <br>
-                    Nous les utiliserons pour communiquer avec vous.
+                        {!! Form::close() !!}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
+
 @endsection
