@@ -6,7 +6,7 @@
         <div class="col-lg-8 order-lg-2">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
+                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profil de membre</a>
                 </li>
                 <li class="nav-item">
                     <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
@@ -14,16 +14,13 @@
             </ul>
             <div class="tab-content py-4">
                 <div class="tab-pane active" id="profile">
-                    <h5 class="mb-3">{{ $user->name }}</h5>
+                    <h5 class="mb-3"> Prénom : {{ ucfirst( $user->first_name) }}</h5>
+                    <h5 class="mb-3"> Nom : {{ ucfirst( $user->last_name) }}</h5>
                     <div class="row">
                         <div class="col-md-6">
-                            <h6>About</h6>
+                            <h6>Membre depuis : </h6>
                             <p>
-                                Web Designer, UI/UX Engineer
-                            </p>
-                            <h6>Hobbies</h6>
-                            <p>
-                                Indie music, skiing and hiking. I love the great outdoors.
+                                {{ $user->activated_at }}
                             </p>
                         </div>
                     </div>
@@ -34,7 +31,7 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">First name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" value="Jane">
+                                <input class="form-control" type="text" value="{{ $user->name }}">
                             </div>
                         </div>
                         <div class="form-group row">
