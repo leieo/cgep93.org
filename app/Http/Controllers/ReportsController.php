@@ -70,7 +70,8 @@ class ReportsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $report = Report::find($id);
+        return view('reports.edit')->with('report',$report);
     }
 
     /**
@@ -82,7 +83,19 @@ class ReportsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        // Save datas
+        $report = Report::find($id);
+        $report->title = $request->input('title');
+        $report->body = $request->input('body');
+        $report->save();
+
+
+        return redirect('/reports')->with('success', 'Un compte rendu a été modifié!');
     }
 
     /**
