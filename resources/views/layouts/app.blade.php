@@ -27,19 +27,6 @@
 
         <style>
 
-          footer {
-          }
-
-          footer h6 {
-            font-weight: 600;
-            font-size: 14px;
-          }
-
-          footer ul {
-            padding-left: 5px;
-            list-style: none;
-          }
-
           .sitemap {
             padding: 30px;
             color: grey;

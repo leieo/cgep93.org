@@ -24,12 +24,6 @@ body {
   background: orange !important;
 }
 
-.navbar-laravel {
-  background-color: blue;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
 .navbar-brand {
   padding-bottom: 0px;
 }
@@ -52,6 +46,10 @@ body {
 
 .navbar-dark .navbar-brand {
   color: #E8E8E8;
+}
+
+.navbar-highlight {
+  color: #ffeb3b;
 }
 
 @media (min-width: 769px) {
@@ -90,5 +88,31 @@ body {
     transform: translateX(-1rem);
     /* Account for horizontal padding on navbar */
   }
+}
+
+footer h6 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+footer ul {
+  padding-left: 5px;
+  list-style: none;
+}
+
+footer p {
+  color: #E8E8E8 !important;
+}
+
+footer a {
+  color: #E8E8E8 !important;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer .footer-icon::before {
+  margin-right: 10px !important;
 }
 

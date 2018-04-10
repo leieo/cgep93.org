@@ -1,4 +1,4 @@
-<footer class="bg-dark mt-5 p-5 text-white">
+<footer class="bg-dark mt-5 p-5">
 
 <!-- ben part -->
     <div class="row">
@@ -24,16 +24,16 @@
       </div>
       <div class="col-md-4 col-sm-12">
         <p>Nous retrouver</p>
-        <a class="nav-link pl-0 pt-0 fas fa-at text-white" href="mailto:contact@cgep93.org">Envoyez nous un mail</a>
-        <a class="nav-link pl-0 fas fa-phone text-white">Appellez-nous au 00.00.00.00.00</a>
-        <a class="nav-link pl-0 fas fa-search-plus text-white" href="{{ Route('formsearch') }}">Vos demandes de recherches</a>
-        <a class="nav-link pl-0 fab fa-facebook-f text-white" href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a class="fa fa-at footer-icon" href="mailto:contact@cgep93.org">Envoyez-nous un mail</a><br>
+        <a class="fa fa-phone footer-icon">Appelez-nous au 00.00.00.00.00</a><br>
+        <a class="fa fa-search-plus footer-icon" href="{{ Route('formsearch') }}">Vos demandes de recherches</a><br>
+        <a class="fa fa-facebook-f footer-icon" href="https://www.facebook.com" target="_blank">Facebook</a><br>
       </div>
       <div class="col-md-12 mt-5 text-center">
         &copy; Le Cercle Généalogique de l'Est Parisien - <?php echo date("Y");?>, tous droits réservés
       </div>
     </div>
-  
+
 	<!-- lei part -->
 	<section class="sitemap">
 		<div class="sitemap-part1">
