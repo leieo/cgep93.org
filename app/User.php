@@ -44,7 +44,6 @@ class User extends Authenticatable
 		'password', 'remember_token',
 	];
 
-	protected $dateFormat = 'd-m-Y H:i:s';
 
 	/**
 	 * The attributes that are mass assignable.
@@ -52,7 +51,7 @@ class User extends Authenticatable
 	 * @var array
 	 */
 	protected $fillable = [
-		'name', 'email', 'password', 'member_number', 'role', 'activated_at', 'activated_by'
+		'first_name', 'last_name', 'email', 'password', 'member_number', 'role', 'activated_at', 'activated_by'
 	];
 
 	/**
