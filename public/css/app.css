@@ -200,7 +200,7 @@ footer .footer-icon::before {
     display: inline-block;
     height: 15px;
     width: 100%;
-    line-height: 10px;
+    line-height: 12px;
     color: inherit;
     text-decoration: none;
     transition: 0.3s;
