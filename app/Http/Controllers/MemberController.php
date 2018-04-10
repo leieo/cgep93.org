@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MemberController extends Controller
 {
     //
         public function member()
     {
-        return view('member');
+        $user = Auth::user();
+        return view('member', compact('user'));
+
     }
 }
