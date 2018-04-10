@@ -26,10 +26,10 @@
         <h3>Nous retrouver</h3>
         <br>
         <p>
-		    <a class="nav-link pl-0 pt-0 fas fa-at text-white" href="mailto:contact@cgep93.org">Envoyez nous un mail</a>
-		    <a class="nav-link pl-0 fas fa-phone text-white">Appellez-nous au 00.00.00.00.00</a>
-		    <a class="nav-link pl-0 fas fa-search-plus text-white" href="{{ Route('formsearch') }}">Vos demandes de recherches</a>
-		    <a class="nav-link pl-0 fab fa-facebook-f text-white" href="https://www.facebook.com" target="_blank">Facebook</a>
+		    <a class="footer-icon pt-0 fa fa-at" href="mailto:contact@cgep93.org">Envoyez nous un mail</a><br>
+		    <a class="footer-icon fa fa-phone">Appellez-nous au 00.00.00.00.00</a><br>
+		    <a class="footer-icon fa fa-search-plus" href="{{ Route('formsearch') }}">Vos demandes de recherches</a><br>
+		    <a class="footer-icon fa fa-facebook-f" href="https://www.facebook.com" target="_blank">Facebook</a>
 		</p>
 		<br>
       </div>
