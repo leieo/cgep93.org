@@ -31,6 +31,10 @@ Route::get('/archives', 'SearchController@archives')->name('archives'); //Archiv
 Route::get('/links', 'SearchController@links')->name('links');//Liens
 Route::get('/worldresearch', 'SearchController@worldresearch')->name('worldresearch');//Recherches dans le mondeRoute::get('/library');//Photothèque
 
+// Member
+Route::post('/member/update/{user}', 'MemberController@update')->name('member.update');
+
+// Authentification routes
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
