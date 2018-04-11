@@ -36,7 +36,7 @@
   
 	<!-- lei part -->
 	<section class="sitemap">
-		<div class="sitemap-part1">
+		<div class="col-md-4 col-sm-12">
 			<h6>L'association</h6>
 			<ul>
 				<li><a href="">Statuts</a></li>
@@ -47,7 +47,7 @@
 				<li><a href="">Nous contacter</a></li>
 			</ul>
 		</div>
-		<div class="sitemap-part2">
+		<div class="col-md-4 col-sm-12">
 			<h6>Recherches</h6>
 			<ul>
 				<li><a href="">Généabank</a></li>
@@ -60,7 +60,7 @@
 				<li><a href="">Recherches dans le monde</a></li>
 			</ul>
 		</div>
-		<div class="sitemap-part3">
+		<div class="col-md-4 col-sm-12">
 			<h6>Vie associative</h6>
 			<ul>
 				<li><a href="">Bulletins</a></li>

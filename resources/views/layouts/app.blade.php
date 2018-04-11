@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117091282-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'UA-117091282-1');
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +27,10 @@
 
         <!-- Styles -->
         <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
-        <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet'/>
 
         <style>
-
+        
           footer {
           }
 
@@ -33,26 +46,7 @@
 
           .sitemap {
             padding: 30px;
-            color: grey;
-            background-color: black;
             font-size: 12px;
-            display: grid;
-            grid-template-columns: 200px 200px 200px;
-          }
-
-          .sitemap a {
-            color: grey;
-          }
-
-          .sitemap-part1 {
-            grid-column: 1 / 2;
-          }
-
-          .sitemap-part2 {
-            grid-column: 2 / 3 ;
-          }
-          .sitemap-part3 {
-            grid-column: 3 / 4 ;
           }
 
         </style>
@@ -63,6 +57,16 @@
 
       @include('layouts.nav')
         @include('layouts.messages')
+            @if(Session::has('error'))
+                <div class="alert alert-danger" role="alert">
+                    {{ Session::get('error') }}
+                </div>
+            @endif
+        @if(Session::has('success'))
+            <div class="alert alert-success" role="alert">
+                {{ Session::get('success') }}
+            </div>
+        @endif
           @yield('content')
       @include('layouts.footer')
 
@@ -75,6 +79,7 @@
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
+
 
     </body>
 </html>
