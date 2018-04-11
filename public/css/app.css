@@ -153,6 +153,26 @@ footer .footer-icon::before {
   padding: 20px;
 }
 
+h5 {
+  margin-top: 20px;
+  padding: 15px 0 5px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table p {
+  margin: 10px;
+}
+
+td {
+  text-align: center;
+  padding: 10px 30px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
 h3 {
   color: red;
 }
