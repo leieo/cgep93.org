@@ -4,7 +4,7 @@
 
 footer h6 {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 footer h3 {
@@ -34,21 +34,5 @@ footer .footer-icon::before {
 }
 
 .sitemap {
-  padding: 30px;
-  color: grey;
-  background-color: black;
-  font-size: 12px;
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-}
-
-.sitemap-part1 {
-  grid-column: 1 / 2;
-}
-
-.sitemap-part2 {
-  grid-column: 2 / 3 ;
-}
-.sitemap-part3 {
-  grid-column: 3 / 4 ;
+  padding: 20px;
 }
