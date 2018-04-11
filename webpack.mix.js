@@ -14,4 +14,4 @@ let mix = require('laravel-mix')
 mix.sass('resources/assets/sass/app.scss', 'public/css')
     .copy('resources/assets/pictures/', 'public/pictures')
 
-mix.js('resources/assets/js/map.js', 'public/js')
+// mix.js('resources/assets/js/map.js', 'public/js')

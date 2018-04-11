@@ -57,6 +57,10 @@ body {
   color: #ffeb3b;
 }
 
+.navbar-nav li:hover {
+  cursor: pointer !important;
+}
+
 @media (min-width: 769px) {
   .navbar-brand-mobile {
     display: none;
