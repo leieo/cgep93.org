@@ -5,6 +5,10 @@ body {
   padding-top: 56px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .marker {
   background-image: url('/images/marqueur.jpg');
   background-size: cover;
@@ -20,6 +24,19 @@ body {
   margin: 15px;
 }
 
-#testColor {
-  background: orange !important;
+
+// what is this
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
 }

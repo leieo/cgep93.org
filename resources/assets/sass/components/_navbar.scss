@@ -18,12 +18,20 @@
   color: $white;
 }
 
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+  color: $lighterWhite;
+}
+
 .navbar-dark .navbar-brand {
   color: $white;
 }
 
 .navbar-highlight {
   color: $mainYellow;
+}
+
+.navbar-nav li:hover {
+  cursor: pointer !important;
 }
 
 @media (min-width: 769px) {

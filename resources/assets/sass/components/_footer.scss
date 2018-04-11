@@ -1,6 +1,14 @@
+.bg-light {
+  background: 	#F0F0F0 !important;
+}
+
 footer h6 {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+footer h3 {
+  color: $darkBlue;
 }
 
 footer ul {
@@ -9,17 +17,22 @@ footer ul {
 }
 
 footer p {
-  color: $white !important;
+  color: $darkBlue !important;
 }
 
 footer a {
-  color: $white !important;
+  color: $darkBlue !important;
 }
 
 footer a:hover {
   text-decoration: none;
+  color: $lighterWhite !important;
 }
 
 footer .footer-icon::before {
   margin-right: 10px !important;
+}
+
+.sitemap {
+  padding: 20px;
 }
