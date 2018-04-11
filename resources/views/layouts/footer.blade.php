@@ -1,4 +1,4 @@
-<footer class="bg-dark mt-5 p-5 text-white">
+<footer class="bg-light mt-5 p-5 text-white">
     <section class="row">
       <div class="col-md-4 col-sm-12">
         <h3>L'association</h3>
@@ -31,7 +31,7 @@
 		    <a class="footer-icon fa fa-search-plus" href="{{ Route('formsearch') }}">Vos demandes de recherches</a><br>
 		    <a class="footer-icon fa fa-facebook-f" href="https://www.facebook.com" target="_blank">Facebook</a>
 		</p>
-		<br>
+		
       </div>
     </section>
     <h3>Plan du site</h3>
@@ -72,6 +72,6 @@
 		</div>
 	</section>
 	<div class="col-md-12 mt-5 text-center">
-    &copy; Le Cercle Généalogique de l'Est Parisien - <?php echo date("Y");?>, tous droits réservés
+    <p>&copy; Le Cercle Généalogique de l'Est Parisien - <?php echo date("Y");?>, tous droits réservés</p>
   </div>
 </footer>

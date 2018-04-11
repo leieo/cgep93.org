@@ -1,6 +1,14 @@
+.bg-light {
+  background: 	#F0F0F0 !important;
+}
+
 footer h6 {
   font-weight: 600;
   font-size: 14px;
+}
+
+footer h3 {
+  color: $darkBlue;
 }
 
 footer ul {
@@ -9,11 +17,11 @@ footer ul {
 }
 
 footer p {
-  color: $white !important;
+  color: $darkBlue !important;
 }
 
 footer a {
-  color: $white !important;
+  color: $darkBlue !important;
 }
 
 footer a:hover {
@@ -32,10 +40,6 @@ footer .footer-icon::before {
   font-size: 12px;
   display: grid;
   grid-template-columns: 200px 200px 200px;
-}
-
-.sitemap a {
-  color: grey;
 }
 
 .sitemap-part1 {

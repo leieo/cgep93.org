@@ -31,7 +31,7 @@
 
     </head>
 
-    <body class="bg-light">
+    <body>
 
         @include('layouts.nav')
         @if(Session::has('error'))
