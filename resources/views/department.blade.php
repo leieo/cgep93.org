@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h1>Le département</h1>
+            <h1 class="department">Le département</h1>
               <h2>Quelques sites utiles</h2>
 
                 <h3>Le Conseil Général</h3>
@@ -23,7 +23,7 @@
                 <h3>La Seine-Saint-Denis</h3>
                   <p><a href="http://pontonnier93.fr/" target="_blank">La Seine-Saint-Denis et Bondy sur le site de René CONNAT</a></p>
                   <p><a href="http://plateau.avron.pagesperso-orange.fr/" target="_blank">Le plateau d'Avron</a></p>
-                
+
                  <h3>Carte interactive du département</h3>
 
         </div>
