@@ -153,6 +153,10 @@ footer .footer-icon::before {
   padding: 20px;
 }
 
+h3 {
+  color: red;
+}
+
 .map {
   position: relative;
   overflow: hidden;
@@ -235,3 +239,4 @@ footer .footer-icon::before {
     width: 100%;
   }
 }
+
