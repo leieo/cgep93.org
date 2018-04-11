@@ -1,3 +1,9 @@
+<script type='text/javascript'>
+function test () {
+	console.log('heyyy');
+}
+</script>
+
 <div class="map" id="map">
 	<div class="map__image">
 		<svg
@@ -24,7 +30,7 @@
       </metadata>
       <defs id="defs52" />
       <g id="g4031" style="fill:#b9b9b9;stroke:#ffffff;stroke-width:4">
-        <a  xlink:href ="" id="ville-AUBERVILLIERS" xlink:title="Aubervilliers"> <path
+        <a  xlink:href ="" id="ville-AUBERVILLIERS" xlink:title="Aubervilliers" onmouseover="test()"> <path
           transform="matrix(3.1413766e-4,0,0,2.0661586e-4,2.2884608,48.807437)"
           d="m 274.65625,429.375 -26,13.5 -2.28125,93.34375 14.09375,-0.21875 61,2.40625 28.5625,-36.4375 30.625,-3.96875 -1.5625,-40.6875 -27.9375,-18.71875 L 302.125,448.75 274.65625,429.375 z" /></a>
 
