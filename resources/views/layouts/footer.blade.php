@@ -1,4 +1,4 @@
-<footer class="bg-light mt-5 p-5 text-white">
+<footer id="footer" class="bg-light mt-5 p-5 text-white">
     <section class="row">
       <div class="col-md-4 col-sm-12">
         <h3>L'association</h3>
@@ -41,10 +41,11 @@
 			<ul>
 				<li><a href="{{route('association')}}#statuts">Statuts</a></li>
 				<li><a href="{{route('association')}}#membres_ca">Membres du CA</a></li>
-				<li><a href="{{route('association')}}#reglement">Règlement intérieur</a></li>
-				<li><a href="{{route('association')}}#adhesions">Adhésions</a></li><a href="">
 				<li><a href="{{route('association')}}#infos">Infos pratiques</a></li>
-				<li><a href="{{route('association')}}#contact">Nous contacter</a></li>
+				<li><a href="{{route('association')}}#reglement">Règlement intérieur</a></li>
+				<li><a href="">Adhésion</a></li>
+				<!-- lien direct vers le formulaire d'adhésion' -->
+				<li><a href="{{route('contact')}}">Nous contacter</a></li>
 			</ul>
 		</div>
 		<div class="col-md-4 col-sm-12">
