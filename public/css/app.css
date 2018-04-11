@@ -116,3 +116,7 @@ footer .footer-icon::before {
   margin-right: 10px !important;
 }
 
+h3 {
+  color: red;
+}
+
