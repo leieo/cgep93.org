@@ -23,7 +23,6 @@
               <a class="dropdown-item" href="#">Infos pratiques</a>
 
               <a class="dropdown-item" href="/reports">Compte-rendus des Assemblées Générales</a>
-              <a class="dropdown-item" href="mailto:contact@cgep93.org">Nous contacter</a>
               <a class="dropdown-item" href="{{route('contact')}}">Nous contacter</a>
             </div>
           </li>
