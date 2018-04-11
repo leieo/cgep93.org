@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Report;
+use App\User;
 
 class ReportsController extends Controller
-{
+{    
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +16,8 @@ class ReportsController extends Controller
     public function index()
     {
         $reports = Report::orderby('created_at', 'desc')->paginate(5);
-        return view('reports.index')->with('reports',$reports);
+        $user = User::get();
+        return view('reports.index')->with('reports',$reports)->with('user',$user);
     }
 
     /**
