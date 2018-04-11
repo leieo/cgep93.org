@@ -75,6 +75,8 @@
 				<tr><td>Monsieur Gilbert LECOUTEUX</td></tr>
 				<tr><td>Monsieur Jacques TOUPIN</td></tr>
 			</table>
+			<br />
+			<br />
 
 			<h2>Règlement intérieur</h2>         
 			<h2>Infos Pratiques</h2>         
