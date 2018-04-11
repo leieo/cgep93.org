@@ -77,14 +77,14 @@ module.exports = __webpack_require__(43);
 /***/ 12:
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/home/simplon/public_html/projetclient/cgep93.org/resources/assets/js/app.js'");
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/Projet client/cgep93.org/resources/assets/js/app.js'");
 
 /***/ }),
 
 /***/ 43:
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import \"components/map\";\n^\n      File to import not found or unreadable: components/map.\nParent style sheet: stdin\n      in /home/simplon/public_html/projetclient/cgep93.org/resources/assets/sass/app.scss (line 9, column 1)\n    at runLoaders (/home/simplon/public_html/projetclient/cgep93.org/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /home/simplon/public_html/projetclient/cgep93.org/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/simplon/public_html/projetclient/cgep93.org/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/home/simplon/public_html/projetclient/cgep93.org/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/home/simplon/public_html/projetclient/cgep93.org/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/home/simplon/public_html/projetclient/cgep93.org/node_modules/neo-async/async.js:7921:18)\n    at options.error (/home/simplon/public_html/projetclient/cgep93.org/node_modules/node-sass/lib/index.js:294:32)");
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import \"components/map\";\n^\n      File to import not found or unreadable: /Applications/MAMP/htdocs/Projet client/cgep93.org/resources/assets/sass/components/_map.scss.\nParent style sheet: stdin\n      in /Applications/MAMP/htdocs/Projet client/cgep93.org/resources/assets/sass/app.scss (line 9, column 1)\n    at runLoaders (/Applications/MAMP/htdocs/Projet client/cgep93.org/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Applications/MAMP/htdocs/Projet client/cgep93.org/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Applications/MAMP/htdocs/Projet client/cgep93.org/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Applications/MAMP/htdocs/Projet client/cgep93.org/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Applications/MAMP/htdocs/Projet client/cgep93.org/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/Applications/MAMP/htdocs/Projet client/cgep93.org/node_modules/neo-async/async.js:7921:18)\n    at options.error (/Applications/MAMP/htdocs/Projet client/cgep93.org/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ })
 
