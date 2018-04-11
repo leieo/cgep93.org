@@ -38,14 +38,14 @@ class ReportsController extends Controller
     {
         $this->validate($request, [
             'title' => 'nullable',
-            'body' => 'nullable',
+            'body' => 'nullable'
         ]);    
             // Save datas
             $report = new Report;
             $report->title = $request->input('title');
             $report->body = $request->input('body');
             $report->save();
-            
+
         return redirect('/reports')->with('success', 'Un nouveau compte rendu d\'AG a été créé!');
     }
 
@@ -57,7 +57,8 @@ class ReportsController extends Controller
      */
     public function show($id)
     {
-        //
+        $report = Report::find($id);
+        return view('reports.show')->with('report', $report);
     }
 
     /**
