@@ -5,6 +5,6 @@
     <h1 class="text-center">{!!$report->title!!}</h1>
     <div>
         {!!$report->body!!} <br>
-        <small> written on {{$report->created_at}} </small>
+        <small> créé le {{$report->created_at}} </small>
     </div>
 @endsection

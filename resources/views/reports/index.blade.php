@@ -2,7 +2,7 @@
 
 @section('content')
     <a href="/reports/create" class="btn btn-primary"> Ajouter des comptes-rendus</a>
-    <h1 class="text-center">Voici les dernières Assemblés Générales:</h1>
+    <h1 class="text-center"> Dernières Assemblées Générales:</h1>
     @if(count($reports)>0)
         @foreach($reports as $report)
         <div class="well jumbotron">
@@ -13,11 +13,11 @@
                 {!!Form::close()!!}
             <h3><a href="/reports/{{$report->id}}">{!!$report->title!!} </a></h3>
             <p>{!!$report->body!!}</p>
-            <small> {{$report->created_at}} </small>
+            <small> Créé le  {{$report->created_at}} </small>
         </div>
         @endforeach
         {{$reports->links()}}
     @else
-        <p> Aucune Assemblés Générales disponibles </p>
+        <p> Aucune Assemblée Générale disponible </p>
     @endif
 @endsection
