@@ -16,13 +16,12 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'Association</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="{{route('association')}}#statuts">Statuts</a>
-              <a class="dropdown-item" href="{{route('association')}}#membres_ca">Membres du CA</a>
-              <a class="dropdown-item" href="{{route('association')}}#infos">Infos pratiques</a>
-              <a class="dropdown-item" href="{{route('association')}}#reglement">Règlement intérieur</a>
-              <a class="dropdown-item" href="#">Adhésion</a>
-              <!-- lien direct vers le formulaire d'adhésion' -->
-              <a class="dropdown-item" href="{{route('contact')}}">Nous contacter</a>
+              <a class="dropdown-item" href="{{route('association')}}">Statuts</a>
+              <a class="dropdown-item" href="{{route('membresCA')}}">Membres du CA</a>
+              <a class="dropdown-item" href="{{route('règlement')}}">Règlement intérieur</a>
+              <a class="dropdown-item" href="{{route('adhésions')}}">Adhésions</a>
+              <a class="dropdown-item" href="{{route('infospratiques')}}">Infos pratiques</a>
+              <a class="dropdown-item" href="mailto:contact@cgep93.org">Nous contacter</a>
             </div>
           </li>
 
