@@ -15,10 +15,10 @@
         <h3>Le siège</h3>
         <br>
         <p>
-          Le siège du Cercle Généalogie de l'Est Parisien<br>
-          1000 route du Président Roosvelt<br>
-          Bâtiment du Ministre de la Culture<br>
-          75012 Paris<br>
+					Siège du Cercle Généalogie de l'Est Parisien<br>
+					Archives Départementales de la Seine-Saint-Denis<br>
+          54, avenue Salvador Allende<br>
+          93000 - Bobigny<br>
           France
         </p>
       </div>

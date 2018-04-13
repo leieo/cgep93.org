@@ -13,7 +13,7 @@
             {
               $ligne = fgetcsv($fp, 4096, ";");
             }
-
+            ?>
         </div>
     </div>
 </div>

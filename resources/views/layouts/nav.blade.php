@@ -3,7 +3,7 @@
           <!--img src="{{asset('assets/pictures/Logo.gif')}}" width="30" height="30" alt="logo"-->
       </a>
       <p>
-        <a class="navbar-brand navbar-brand-laptop" href="/public">Cercle Généalogique de l'Est Parisien</a>
+        <a class="navbar-brand navbar-brand-laptop" href="/">Cercle Généalogique de l'Est Parisien</a>
         <br class="navbar-brand navbar-brand-laptop">
         <a class="navbar-brand navbar-brand-mobile" href="/public">CGEP 93</a>
         <a class="navbar-brand navbar-brand-laptop navbar-brand-laptop-subtitle" href="/public">Généalogie et Histoire de Seine-Saint-Denis</a>

@@ -22,6 +22,6 @@ class CommunitylifeController extends Controller
     return view('genecole');
   }
   public function events(){
-    return view('events');
+    return view('eventhome');
   }
 }
