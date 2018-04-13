@@ -153,8 +153,8 @@ footer .footer-icon::before {
   padding: 20px;
 }
 
-h3 {
-  color: red;
+.intro {
+  font-style: italic;
 }
 
 .map {
