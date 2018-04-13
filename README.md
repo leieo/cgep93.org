@@ -7,6 +7,23 @@
 + [Trello](https://trello.com/)
 + [Slide](http://slides.com/thomasfroger/projet-client#/)
 
+## Bonnes Pratiques + Definition of Done
++ On ne push pas directement son travail dans develop ou Master !
++ Chacun créé sa propre branche pour une feature (convention de nommage: nomDeLaFeature/nomDeLaPersonne)
++ Pour la création d'une branche : 
+    + git checkout -b nomBranche
+    + git push --set-upstream origin nomBranche
+    
++ Merge de sa branche dans une autre :
+    + Se placer sur la branche que l'on veut merge et la remettre à niveau : git pull
+    + Se placer sur la branche où on veut appliquer le merge et la remettre à niveau : git pull
+    + Sur cette dernière branche : git merge --no-ff nomBranche (où nomBranche = la branche que l'on veut merge)
+    + git push
+    
++ Suppression de sa branche en local et en distant :
+    + git branch -d nomBranche (ou -D à la place du -d si problème merge) -> suppression branche locale
+    + git push origin --delete nomBranch -> suppression branche distante
+    + Pour chacun des autres utilisateurs du groupe : git fetch --all --prune (permet de remettre à niveau toutes les branches)
 
 ## <a name="historique"></a> Historique (à mettre à jour régulièrement)
 
