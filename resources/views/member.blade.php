@@ -27,90 +27,67 @@
                     <!--/row-->
                 </div>
                 <div class="tab-pane" id="edit">
-                    <form role="form">
+                    <form action="{{ route('member.update', [$user]) }}" method="post">
+                        @csrf
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">First name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" value="{{ $user->name }}">
+                                <input class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="first_name" type="text" value="{{ $user->first_name }}">
+                                @if ($errors->has('first_name'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('first_name') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Last name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" value="Bishop">
+                                <input class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}" name="last_name" type="text" value="{{ $user->last_name }}">
+                                @if ($errors->has('last_name'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('last_name') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" value="email@gmail.com">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Company</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="text" value="">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Website</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="url" value="">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Address</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="text" value="" placeholder="Street">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label"></label>
-                            <div class="col-lg-6">
-                                <input class="form-control" type="text" value="" placeholder="City">
-                            </div>
-                            <div class="col-lg-3">
-                                <input class="form-control" type="text" value="" placeholder="State">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Time Zone</label>
-                            <div class="col-lg-9">
-                                <select id="user_time_zone" class="form-control" size="0">
-                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                                    <option value="Alaska">(GMT-09:00) Alaska</option>
-                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
-                                    <option value="Arizona">(GMT-07:00) Arizona</option>
-                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
-                                    <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
-                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
-                                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="text" value="janeuser">
+                                <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" type="email" value="{{ $user->email }}">
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" value="11111122333">
+                                <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" type="password">
+                                @if ($errors->has('password'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" value="11111122333">
+                                <input class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" name="password_confirmation" type="password">
+                                @if ($errors->has('password_confirmation'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label"></label>
                             <div class="col-lg-9">
-                                <input type="reset" class="btn btn-secondary" value="Cancel">
-                                <input type="button" class="btn btn-primary" value="Save Changes">
+                                <input type="submit" class="btn btn-primary" value="Save Changes">
                             </div>
                         </div>
                     </form>

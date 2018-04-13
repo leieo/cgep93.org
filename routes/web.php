@@ -12,6 +12,12 @@ Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //
 
 // Association Route Longue page avec ancres - renvoi sur le footer pour Nous Contacter
 Route::get('/association', 'AssociationController@association')->name('association');
+Route::get('/membresCA', 'AssociationController@membresCA')->name('membresCA');
+Route::get('/règlement', 'AssociationController@règlement')->name('règlement');
+Route::get('/adhésions', 'AssociationController@adhésions')->name('adhésions');
+Route::get('/infospratiques', 'AssociationController@infospratiques')->name('infospratiques');
+Route::get('/nouscontacter', 'AssociationController@nouscontacter')->name('nouscontacter');
+
 
 // Vie Associative Route - Longue page avec ancres et renvoi pour chaque section
 Route::get('/communitylife', 'CommunitylifeController@communitylife')->name('communitylife'); //Vie associative
@@ -31,6 +37,10 @@ Route::get('/archives', 'SearchController@archives')->name('archives'); //Archiv
 Route::get('/links', 'SearchController@links')->name('links');//Liens
 Route::get('/worldresearch', 'SearchController@worldresearch')->name('worldresearch');//Recherches dans le mondeRoute::get('/library');//Photothèque
 
+// Member
+Route::post('/member/update/{user}', 'MemberController@update')->name('member.update');
+
+// Authentification routes
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -48,4 +58,3 @@ Route::group(['middleware' => ['web', 'auth', 'admin']], function () {
 	Route::get('/admin/members/accept/{user}', 'Backoffice\MembersController@accept')->name('admin.members.accept');
 	Route::get('/admin/members/exclude/{user}', 'Backoffice\MembersController@exclude')->name('admin.members.exclude');
 });
-
