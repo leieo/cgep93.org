@@ -14,7 +14,8 @@
 Route::get('/', 'HomeController@index');
 
 // Footer Routes
-Route::get('/contact', 'ContactController@contact')->name('contact'); //formulaire de contact
+Route::get('/contact', 'ContactController@viewContact')->name('contact'); //formulaire de contact
+Route::get('/mail','ContactController@sendMail')->name('mail');
 Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //formulaire de recherche
 
 // Association Route Longue page avec ancres - renvoi sur le footer pour Nous Contacter

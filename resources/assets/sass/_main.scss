@@ -1,0 +1,42 @@
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+  padding-top: 56px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.marker {
+  background-image: url('/images/marqueur.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#map {
+  height: 400px;
+  width: 600px;
+  margin: 15px;
+}
+
+
+// what is this
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
