@@ -15,11 +15,9 @@ Route::get('/association', 'AssociationController@association')->name('associati
 
 // Vie Associative Route - Longue page avec ancres et renvoi pour chaque section
 Route::get('/communitylife', 'CommunitylifeController@communitylife')->name('communitylife'); //Vie associative
-Route::get('/bulletins', 'CommunitylifeController@bulletins')->name('bulletins');  //Bulletins
-Route::get('/summary', 'CommunitylifeController@summary')->name('summary');//Listes sommaires
-Route::get('/paperstatements', 'CommunitylifeController@paperstatements')->name('paperstatements');//Relevés papiers
-Route::get('/genecole', 'CommunitylifeController@genecole')->name('genecole');//Génécole
-Route::get('/events', 'CommunitylifeController@events')->name('events');//Evènements
+Route::get('/bulletin', 'CommunitylifeController@bulletin')->name('bulletin');  //Bulletin
+// ICI, mettre les routes des futures pages "les études" et "événements passés"
+// ( pour l'instant, ce sont des liens externes vers l'ancien site )
 
 // Recherches
 Route::get('/search', 'SearchController@search')->name('search');//Recherche
