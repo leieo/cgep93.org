@@ -29,11 +29,10 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vie associative</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="{{route('bulletins')}}">Bulletins</a>
-                <a class="dropdown-item" href="{{route('summary')}}">Liste sommaire</a>
-                <a class="dropdown-item" href="{{route('paperstatements')}}">Relevés papiers</a>
-                <a class="dropdown-item" href="{{route('genecole')}}">Génécole</a>
-                <a class="dropdown-item" href="{{route('events')}}">Événements</a>
+                <a class="dropdown-item" href="{{route('communitylife')}}#bulletin">Bulletin</a>
+                <a class="dropdown-item" href="{{route('communitylife')}}#publications">Autres publications</a>
+                <a class="dropdown-item" href="{{route('communitylife')}}#genecole">Génécole</a>
+                <a class="dropdown-item" href="{{route('communitylife')}}#events">Événements</a>
             </div>
         </li>
 

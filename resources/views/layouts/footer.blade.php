@@ -37,7 +37,7 @@
     <h3>Plan du site</h3>
 	<section class="sitemap row">
 		<div class="col-md-4 col-sm-12">
-			<h6>L'association</h6>
+			<h6><a href="{{route('association')}}">L'association</a></h6>
 			<ul>
 				<li><a href="{{route('association')}}#statuts">Statuts</a></li>
 				<li><a href="{{route('association')}}#membres_ca">Membres du CA</a></li>
@@ -49,7 +49,7 @@
 			</ul>
 		</div>
 		<div class="col-md-4 col-sm-12">
-			<h6>Recherches</h6>
+			<h6><a href="">Recherches</a></h6>
 			<ul>
 				<li><a href="">Généabank</a></li>
 				<li><a href="">Bigenet</a></li>
@@ -62,14 +62,14 @@
 			</ul>
 		</div>
 		<div class="col-md-4 col-sm-12">
-			<h6>Vie associative</h6>
+			<h6><a href="">Vie associative</a></h6>
 			<ul>
-				<li><a href="">Bulletins</a></li>
-				<li><a href="">Autres publications</a></li>
-				<li><a href="">Génécole</a></li>
-				<li><a href="">Évènements</a></li>
+				<li><a href="{{route('communitylife')}}#bulletin">Bulletin</a></li>
+				<li><a href="{{route('communitylife')}}#publications">Autres publications</a></li>
+				<li><a href="{{route('communitylife')}}#genecole">Génécole</a></li>
+				<li><a href="{{route('communitylife')}}#events">Évènements</a></li>
 			</ul>
-			<h6><a href="">Espace membres</a></h6>
+			<h6><a href="{{route('login')}}">Espace membres</a></h6>
 		</div>
 	</section>
 	<div class="col-md-12 mt-5 text-center">
