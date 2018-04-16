@@ -7,7 +7,7 @@ Route::get('/', 'HomeController@index');
 
 // Footer Routes
 Route::get('/contact', 'ContactController@viewContact')->name('contact'); //formulaire de contact
-Route::get('/mail','ContactController@sendMail')->name('mail');
+Route::get('/mail', 'ContactController@sendMail')->name('mail');
 Route::get('/formsearch', 'FormSearchController@search')->name('formsearch'); //formulaire de recherche
 
 // Association Route Longue page avec ancres - renvoi sur le footer pour Nous Contacter
@@ -40,6 +40,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/member', 'MemberController@member')->name('member');
 
+// Assemblée générale
+Route::get('/reports', 'ReportController@index')->name('report.index');
+Route::get('/report/{report}', 'ReportController@show')->name('report.show');
+
 /**
  * BACK OFFICE ROUTES
  */
@@ -51,4 +55,12 @@ Route::group(['middleware' => ['web', 'auth', 'admin']], function () {
 	Route::get('/admin/members/excluded', 'Backoffice\MembersController@excluded')->name('admin.members.excluded');
 	Route::get('/admin/members/accept/{user}', 'Backoffice\MembersController@accept')->name('admin.members.accept');
 	Route::get('/admin/members/exclude/{user}', 'Backoffice\MembersController@exclude')->name('admin.members.exclude');
+
+	Route::get('/admin/reports', 'Backoffice\ReportController@index')->name('admin.report.index');
+	Route::get('/admin/report/create', 'Backoffice\ReportController@create')->name('admin.report.create');
+	Route::post('/admin/report/create', 'Backoffice\ReportController@store')->name('admin.report.store');
+	Route::get('/admin/report/{report}', 'Backoffice\ReportController@show')->name('admin.report.show');
+	Route::get('/admin/report/{report}/edit', 'Backoffice\ReportController@edit')->name('admin.report.edit');
+	Route::post('/admin/report/{report}/edit', 'Backoffice\ReportController@update')->name('admin.report.update');
+	Route::post('/admin/report/{report}/delete', 'Backoffice\ReportController@destroy')->name('admin.report.destroy');
 });

@@ -40,6 +40,20 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="left" title="Assemblée générale">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
+                            <i class="fa fa-fw fa-users"></i>
+                            <span class="nav-link-text">Assemblée générale</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseComponents2">
+                            <li>
+                                <a href="{{ route('admin.report.index') }}">Tous</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.report.create') }}">Créer</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="navbar-nav sidenav-toggler">
                     <li class="nav-item">

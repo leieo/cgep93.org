@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Auth;
  * @property string activated_at
  * @property int role
  * @property int member_number
- * @property ?int activated_by
+ * @property int|null activated_by
  */
 class User extends Authenticatable
 {
