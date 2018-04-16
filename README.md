@@ -2,12 +2,15 @@
 
 [Site actuel](http://www.cgep93.org/)
 
-+ [Historique](#historique)
 + [Infos utiles](#infos)
++ [Historique](#historique)
 + [Trello](https://trello.com/)
 + [Slide](http://slides.com/thomasfroger/projet-client#/)
 
-## Bonnes Pratiques + Definition of Done
+## <a name="infos"></a> Infos utiles
+
+### Bonnes Pratiques + Definition of Done
+
 + On ne push pas directement son travail dans develop ou Master !
 + Chacun créé sa propre branche pour une feature (convention de nommage: nomDeLaFeature/nomDeLaPersonne)
 + Pour la création d'une branche : 
@@ -24,6 +27,25 @@
     + git branch -d nomBranche (ou -D à la place du -d si problème merge) -> suppression branche locale
     + git push origin --delete nomBranch -> suppression branche distante
     + Pour chacun des autres utilisateurs du groupe : git fetch --all --prune (permet de remettre à niveau toutes les branches)
+
+### Pour que le CSS s'affiche correctement :
+
+Ouvrir le terminal dans le dossier du projet, puis :
+
+`$ sudo npm install`
+
+`$ npm run dev`
+
+`$ npm run watch`
+
+### Info utilisation GOOGLE API
+
+Il faut rajouter les evenements sur le calendrier du site depuis votre compte gmail  (avec cgep93web@gmail.com)
+Pour les information sur les visiteur du site veuillez vous rendre  sur https://analytics.google.com puis sur CGEP93 pour avoir le suivis des visites
+
+Faut pas oublier de changer le .ENV local pour l'envois des mail !
+
+---
 
 ## <a name="historique"></a> Historique (à mettre à jour régulièrement)
 
@@ -65,9 +87,3 @@ Penser à utiliser ...
 ##### Définition des lots fonctionnels & rédaction des user stories
 
 ---
-Info utilisation GOOGLE API:
-Il faut rajouter les evenements sur le calendrier du site depuis votre compte gmail  (avec cgep93web@gmail.com)
-Pour les information sur les visiteur du site veuillez vous rendre  sur https://analytics.google.com puis sur CGEP93 pour avoir le suivis des visites
-
-
-Faut pas oublier de changer le .ENV local pour l'envois des mail !
