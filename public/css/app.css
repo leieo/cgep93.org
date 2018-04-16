@@ -151,10 +151,6 @@ footer .footer-icon::before {
   padding: 20px;
 }
 
-<<<<<<< HEAD
-.intro {
-  font-style: italic;
-=======
 .asso_page header {
   text-align: center;
 }
@@ -182,11 +178,6 @@ footer .footer-icon::before {
 
 .asso_page tr {
   border-bottom: 1px solid #ddd;
-}
-
-h3 {
-  color: red;
->>>>>>> 7c3e5c290a4ea2418be9a8eca5c9c6b21d805034
 }
 
 .map {
@@ -270,5 +261,9 @@ h3 {
     position: static;
     width: 100%;
   }
+}
+
+.intro {
+  font-style: italic;
 }
 
