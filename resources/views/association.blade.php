@@ -89,7 +89,7 @@
 					<td>38 Euros</td>
 				</tr>
 				<tr>
-					<td align>Adhésion couple</td>
+					<td>Adhésion couple</td>
 					<td>><td/>
 					<td>47 Euros</td>
 				</tr>
