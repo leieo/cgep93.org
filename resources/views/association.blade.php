@@ -84,12 +84,14 @@
 			<h5>Tarifs d'adhésion à l'association</h5>
 			<table align="center"> 
 				<tr>
-					<td>Adhésion :</td>
-					<td>->   38 Euros</td>
+					<td>Adhésion</td>
+					<td>-><td/>
+					<td>38 Euros</td>
 				</tr>
 				<tr>
-					<td>Adhésion couple :</td>
-					<td>->   47 Euros</td>
+					<td>Adhésion couple</td>
+					<td>><td/>
+					<td>47 Euros</td>
 				</tr>
 			</table>
 			<br />
