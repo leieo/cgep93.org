@@ -85,12 +85,12 @@
 			<table align="center"> 
 				<tr>
 					<td>Adhésion</td>
-					<td>><td/>
+					<td> > <td/>
 					<td>38 Euros</td>
 				</tr>
 				<tr>
 					<td>Adhésion couple</td>
-					<td>><td/>
+					<td> > <td/>
 					<td>47 Euros</td>
 				</tr>
 			</table>
